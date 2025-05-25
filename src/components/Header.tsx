@@ -1,6 +1,7 @@
 
 import { Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -28,17 +29,17 @@ const Header = () => {
       {/* Main Navigation */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <h1 className="text-2xl font-bold text-charcoal-800">Aziz Khan Curtains</h1>
             <span className="text-champagne-600 text-sm font-semibold">Quick Delivery</span>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Home</a>
-            <a href="#services" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Services</a>
-            <a href="#products" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Products</a>
-            <a href="#about" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">About</a>
-            <a href="#contact" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Contact</a>
+            <Link to="/" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Home</Link>
+            <Link to="/services" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Services</Link>
+            <Link to="/products" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Products</Link>
+            <Link to="/estimate" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">Estimate</Link>
+            <Link to="/about" className="text-sage-700 hover:text-charcoal-800 font-medium transition-colors">About</Link>
           </nav>
 
           <Button className="bg-champagne-500 hover:bg-champagne-600 text-white font-semibold px-6">
