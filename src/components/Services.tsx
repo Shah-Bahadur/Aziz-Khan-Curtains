@@ -31,11 +31,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-luxury-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-navy-900 mb-4">Our Quick Services</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-charcoal-900 mb-4">Our Quick Services</h2>
+          <p className="text-xl text-sage-600 max-w-2xl mx-auto">
             From consultation to installation, we deliver excellence at every step with lightning-fast service.
           </p>
         </div>
@@ -45,17 +45,17 @@ const Services = () => {
             <Card key={index} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-0 bg-white">
               <CardContent className="p-8 text-center">
                 <div className="absolute top-4 right-4">
-                  <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                  <span className="bg-champagne-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                     {service.highlight}
                   </span>
                 </div>
                 
-                <div className="bg-navy-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-500 transition-colors">
+                <div className="bg-charcoal-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-champagne-500 transition-colors">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-navy-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <h3 className="text-xl font-bold text-charcoal-900 mb-4">{service.title}</h3>
+                <p className="text-sage-600 leading-relaxed">{service.description}</p>
               </CardContent>
             </Card>
           ))}

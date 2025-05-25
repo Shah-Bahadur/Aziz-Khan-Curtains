@@ -34,8 +34,8 @@ const Products = () => {
     <section id="products" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-navy-900 mb-4">Premium Collection</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-charcoal-900 mb-4">Premium Collection</h2>
+          <p className="text-xl text-sage-600 max-w-2xl mx-auto">
             Discover our extensive range of high-quality curtains and blinds, all available for quick delivery.
           </p>
         </div>
@@ -50,26 +50,26 @@ const Products = () => {
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="bg-champagne-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     Quick Delivery
                   </span>
                 </div>
               </div>
               
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-2">{product.title}</h3>
-                <p className="text-2xl font-bold text-orange-500 mb-4">{product.price}</p>
+                <h3 className="text-xl font-bold text-charcoal-900 mb-2">{product.title}</h3>
+                <p className="text-2xl font-bold text-champagne-600 mb-4">{product.price}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {product.features.map((feature, i) => (
-                    <li key={i} className="flex items-center space-x-2 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
+                    <li key={i} className="flex items-center space-x-2 text-sm text-sage-600">
+                      <div className="w-1.5 h-1.5 bg-champagne-500 rounded-full"></div>
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <Button className="w-full bg-navy-900 hover:bg-navy-800 text-white">
+                <Button className="w-full bg-charcoal-800 hover:bg-charcoal-700 text-white">
                   Order Now
                 </Button>
               </CardContent>

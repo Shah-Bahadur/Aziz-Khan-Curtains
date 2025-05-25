@@ -15,14 +15,14 @@ const Index = () => {
       <Contact />
       
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-charcoal-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <h3 className="text-xl font-bold mb-2">Aziz Khan Curtains</h3>
-            <p className="text-gray-400">Premium Curtains with Lightning Fast Delivery</p>
+            <p className="text-luxury-400">Premium Curtains with Lightning Fast Delivery</p>
           </div>
-          <div className="border-t border-gray-700 pt-4">
-            <p className="text-sm text-gray-400">
+          <div className="border-t border-sage-700 pt-4">
+            <p className="text-sm text-luxury-400">
               © 2024 Aziz Khan Curtains. All rights reserved. | Designed for Quick Service Excellence
             </p>
           </div>
