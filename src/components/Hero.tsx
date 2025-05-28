@@ -1,23 +1,65 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, Award } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [api, setApi] = useState<any>();
+
+  const carouselSlides = [
+    {
+      title: "Transform Your Home with",
+      highlight: "Premium Curtains",
+      description: "Professional installation, premium quality fabrics, and lightning-fast delivery. Experience the difference with Aziz Khan Curtains.",
+      emoji: "🏠"
+    },
+    {
+      title: "Luxury Blinds for",
+      highlight: "Modern Living",
+      description: "Sleek and functional window treatments that combine style with practicality. Perfect for contemporary homes.",
+      emoji: "🪟"
+    },
+    {
+      title: "Custom Drapes for",
+      highlight: "Every Space",
+      description: "Tailored solutions for bedrooms, living rooms, offices, and more. Made to measure with premium fabrics.",
+      emoji: "✨"
+    }
+  ];
+
+  // Auto-scroll carousel every 3 seconds
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section id="home" className="relative bg-white py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-                Transform Your Home with
-                <span className="text-red-500 block">Premium Curtains</span>
-              </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Professional installation, premium quality fabrics, and lightning-fast delivery. 
-                Experience the difference with Aziz Khan Curtains.
-              </p>
-            </div>
+            <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
+              <CarouselContent>
+                {carouselSlides.map((slide, index) => (
+                  <CarouselItem key={index}>
+                    <div className="space-y-6">
+                      <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+                        {slide.title}
+                        <span className="text-red-500 block">{slide.highlight}</span>
+                      </h1>
+                      <p className="text-xl text-gray-600 leading-relaxed">
+                        {slide.description}
+                      </p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 text-lg rounded-lg">
