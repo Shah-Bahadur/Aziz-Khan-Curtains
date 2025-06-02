@@ -1,94 +1,80 @@
-
 const Process = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-champagne-600 mb-4">
             How We Transform Your Space!
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-          {/* Step 1: Estimate & Schedule */}
+        {/* Steps Grid */}
+        <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 lg:gap-4">
+          {/* Step 1 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-8 mb-6 h-64 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br bg-[#FAF1EE] rounded-xl flex items-center justify-center">
-                {/* <div className="text-6xl">📅</div> */}
-                <div className="text-center">
-                    <img
-                      src="calender1.png"
-                      alt="Calendar Logo"
-                      className="mx-auto"
-                    />
-                  </div>
-
+            <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+                <img
+                  src="/calender1.png"
+                  alt="Calendar"
+                  className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Estimate &<br />
               Schedule FREE<br />
               Home Visit
             </h3>
           </div>
 
-          {/* Step 2: Home Visit */}
+          {/* Step 2 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-8 mb-6 h-64 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br bg-[#FAF1EE] rounded-xl flex items-center justify-center">
-                {/* <div className="text-6xl">🏠</div> */}
-                <div className="text-center">
-                    <img
-                      src="homevisit1.png"
-                      alt="Calendar Logo"
-                      className="mx-auto"
-                    />
-                  </div>
+            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+                <img
+                  src="/homevisit1.png"
+                  alt="Home Visit"
+                  className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Home Visit of<br />
               ZExperts
             </h3>
           </div>
 
-          {/* Step 3: Approve Quote */}
+          {/* Step 3 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-8 mb-6 h-64 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br bg-[#FAF1EE] rounded-xl flex items-center justify-center">
-                {/* <div className="text-6xl">🤝</div> */}
-                <div className="text-center">
-                    <img
-                      src="aq1.png"
-                      alt="Calendar Logo"
-                      // width={194}
-                      // height={194}
-                      className="mx-auto"
-                    />
-                  </div>
+            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+                <img
+                  src="/aq1.png"
+                  alt="Approve Quote"
+                  className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Approve the<br />
               Quote
             </h3>
           </div>
 
-          {/* Step 4: Install Curtains */}
+          {/* Step 4 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-8 mb-6 h-64 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br  bg-[#FAF1EE] rounded-xl flex items-center justify-center">
-                {/* <div className="text-6xl">🪟</div> */}
-                <div className="text-center">
-                    <img
-                      src="install1.png"
-                      alt="installation Logo"
-                      className="mx-auto"
-                    />
-                  </div>
+            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+                <img
+                  src="/install1.png"
+                  alt="Install Curtains"
+                  className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Install Curtains<br />
               in 5 Days
             </h3>
