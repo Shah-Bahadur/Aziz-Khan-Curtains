@@ -44,7 +44,7 @@ const Hero = () => {
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
             <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
@@ -52,7 +52,7 @@ const Hero = () => {
                 {carouselSlides.map((slide, index) => (
                   <CarouselItem key={index}>
                     <div className="space-y-6">
-                      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                      <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight py-5 text-white">
                         {slide.title}
                         <span className="text-champagne-600 block">{slide.highlight}</span>
                       </h1>
@@ -69,9 +69,9 @@ const Hero = () => {
               <Button size="lg" className="bg-champagne-600 hover:bg-champagne-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-lg">
                 Book Free Home Visit <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 hover:border-champagne-700 text-gray-700 hover:bg-champagne-700 hover:text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-lg">
+              {/* <Button size="lg" variant="outline" className="border-gray-300 hover:border-champagne-700 text-gray-700 hover:bg-champagne-700 hover:text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-lg">
                 View Our Collection
-              </Button>
+              </Button> */}
             </div>
 
             <div className="grid grid-cols-3 sm:grid-cols-3 gap-8 pt-8 border-t border-gray-200">
@@ -92,7 +92,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
+{/* 
           <div className="relative mt-10 lg:mt-0">
             <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/40 shadow-lg">
               <div className="bg-white/30 backdrop-blur-md rounded-xl p-6 sm:p-8 shadow-lg">
@@ -117,7 +117,7 @@ const Hero = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

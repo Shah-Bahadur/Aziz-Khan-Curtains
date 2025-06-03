@@ -4,7 +4,7 @@ const Process = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-champagne-600 mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold text-champagne-600 mb-4">
             How We Transform Your Space!
           </h2>
         </div>
@@ -22,7 +22,7 @@ const Process = () => {
                 />
               </div>
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-base sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Estimate &<br />
               Schedule FREE<br />
               Home Visit
@@ -31,7 +31,7 @@ const Process = () => {
 
           {/* Step 2 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+            <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
                 <img
                   src="/homevisit1.png"
@@ -40,15 +40,15 @@ const Process = () => {
                 />
               </div>
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-base sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Home Visit of<br />
-              ZExperts
+              AZC Experts
             </h3>
           </div>
 
           {/* Step 3 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+            <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
                 <img
                   src="/aq1.png"
@@ -57,7 +57,7 @@ const Process = () => {
                 />
               </div>
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-base sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Approve the<br />
               Quote
             </h3>
@@ -65,7 +65,7 @@ const Process = () => {
 
           {/* Step 4 */}
           <div className="text-center group">
-            <div className="bg-gray-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
+            <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
                 <img
                   src="/install1.png"
@@ -74,7 +74,7 @@ const Process = () => {
                 />
               </div>
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
+            <h3 className="text-base sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Install Curtains<br />
               in 5 Days
             </h3>
