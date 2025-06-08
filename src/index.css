@@ -93,9 +93,11 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Playfair Display', sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
 }

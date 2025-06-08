@@ -5,6 +5,7 @@ import Process from "@/components/Process";
 import Services from "@/components/Services";
 import Products from "@/components/Products";
 import Contact from "@/components/Contact";
+import ThermalCurtainsSectionProps from "@/components/ThermalCurtainsSectionProps";
 
 const Index = () => {
   return (
@@ -12,9 +13,13 @@ const Index = () => {
       <Header />
       <Hero />
       <Process />
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
+      <ThermalCurtainsSectionProps />
+    </div>
       <Products />
       <Services />
       <Contact />
+
       
       {/* Footer */}
       <footer className="bg-charcoal-900 text-white py-8">
