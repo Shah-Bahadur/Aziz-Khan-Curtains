@@ -22,13 +22,14 @@ const Tcs3 = () => {
       {/* Text Section */}
       <div className="lg:w-1/2 flex flex-col gap-4">
         <h2 className="text-center sm:text-left text-2xl sm:text-5xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
-          This Isn’t<br />
-          Décor<br />
-          It’s Your<br />
+          Step into<br />
+          <i className='bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent'>Cooler Days </i><br />
+          and Calmer Nights<br />
           Daily Reset!
         </h2>
         <p className="text-center sm:text-left text-lg text-gray-400 leading-relaxed">
-          Dubai’s heat strains ACs, fades interiors, and invites mold — costing comfort, health, and money.
+          Our thermal curtains don’t just decorate — they transform your space. 
+          Block Dubai’s blazing heat, protect interiors from fading, and create a soothing sanctuary right at home.
         </p>
       </div>
 
