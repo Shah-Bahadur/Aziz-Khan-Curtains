@@ -50,16 +50,16 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
     
           </div>
         {/* Left: right Decor Image */}
-        <div className="lg:w-1/2 w-74 lg:ms-0 ms-28 lg:-mt-0 -mt-20 lg:rounded-2xl rounded-md  overflow-hidden shadow-2xl">
+        <div className="lg:w-1/2 w-74 lg:ms-0 ms-28 lg:-mt-0 -mt-10 lg:rounded-2xl rounded-md  overflow-hidden shadow-2xl">
           <img
             src={section3RightImage}
             alt="Decor Showcase"
-            className="w-auto h-auto object-fill shadow-2xl"
+            className="w-80 h-auto object-fill shadow-2xl"
           />
         </div>
 
         {/* Decorative Small Images */}
-          <div className="flex gap-1 lg:-mt-0 -mt-20 shadow-2xl">
+          <div className="flex gap-1 lg:-mt-0 -mt-5 shadow-2xl">
             <img
               src={section3SideImage}
               alt="Interior Pic"
