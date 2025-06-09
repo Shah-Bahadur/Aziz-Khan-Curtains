@@ -43,7 +43,9 @@ const Hero = () => {
     >
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
-
+      {/* Gradient overlay at bottom to white */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
+        
       <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">

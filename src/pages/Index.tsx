@@ -6,6 +6,9 @@ import Services from "@/components/Services";
 import Products from "@/components/Products";
 import Contact from "@/components/Contact";
 import ThermalCurtainsSectionProps from "@/components/ThermalCurtainsSectionProps";
+import Tcs3 from "@/components/Tcs3";
+import FloatingButton from "@/components/FloatingButton";
+
 
 const Index = () => {
   return (
@@ -15,10 +18,29 @@ const Index = () => {
       <Process />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
       <ThermalCurtainsSectionProps />
-    </div>
+      {/* Second section - custom data */}
+      <Tcs3/>
+      
+      {/* <ThermalCurtainsSectionProps
+        titleLine1="Block the Sun,"
+        titleLine2="Stay Chill."
+        imageUrl="/bcu.jpeg"
+        testimonial="Didn’t expect curtains to lower my AC usage this much. I’m genuinely impressed!"
+        author="Hina Yousuf"
+        authorImageUrl="/reviewer2.png"
+        description={
+          <>
+            Extreme sunlight protection, perfect for the Dubai heat.<br />
+            Stylish, smart, and energy-saving.
+          </>
+        }
+      /> */}
+      
+      </div>
       <Products />
       <Services />
       <Contact />
+      <FloatingButton />
 
       
       {/* Footer */}

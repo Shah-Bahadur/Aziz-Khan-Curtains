@@ -4,7 +4,7 @@ const Process = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-champagne-600 mb-4">
+          <h2 className="text-3xl lg:text-5xl font-bold bg-gradient-to-tl from-champagne-400 to-champagne-900 bg-clip-text text-transparent mb-4">
             How We Transform Your Space!
           </h2>
         </div>
@@ -14,7 +14,7 @@ const Process = () => {
           {/* Step 1 */}
           <div className="text-center group">
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-r rounded-xl flex items-center justify-center">
                 <img
                   src="/calender1.png"
                   alt="Calendar"
@@ -32,7 +32,7 @@ const Process = () => {
           {/* Step 2 */}
           <div className="text-center group">
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-r  rounded-xl flex items-center justify-center">
                 <img
                   src="/homevisit1.png"
                   alt="Home Visit"
@@ -49,7 +49,7 @@ const Process = () => {
           {/* Step 3 */}
           <div className="text-center group">
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-r  rounded-xl flex items-center justify-center">
                 <img
                   src="/aq1.png"
                   alt="Approve Quote"
@@ -66,7 +66,7 @@ const Process = () => {
           {/* Step 4 */}
           <div className="text-center group">
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
-              <div className="w-full h-full bg-champagne-300 rounded-xl flex items-center justify-center">
+              <div className="w-full h-full  rounded-xl flex items-center justify-center">
                 <img
                   src="/install1.png"
                   alt="Install Curtains"
@@ -90,8 +90,8 @@ const Process = () => {
             <p className="text-gray-600 mb-6">
               Schedule your free home visit today and transform your space with premium curtains
             </p>
-            <button className="bg-champagne-500 hover:bg-champagne-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors duration-300 shadow-xl">
-              Book Free Home Visit
+            <button className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+              Book <u><b>Free</b></u> Home Visit
             </button>
           </div>
         </div>
