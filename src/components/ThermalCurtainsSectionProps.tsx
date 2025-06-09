@@ -129,7 +129,7 @@ const ThermalCurtainsSection = ({
             <img
               src="/sm.png"
               alt="Interior Pic"
-              className="w-80 rounded-md shadow-md object-cover"
+              className="w-80 h-auto rounded-md shadow-md object-cover"
             />
     
           </div>
