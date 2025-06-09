@@ -107,7 +107,7 @@ const ThermalCurtainsSection = ({
           <img
             src="/large.png"
             alt="Decor Showcase"
-            className="w-auto h-full object-fill"
+            className="w-auto h-auto object-fill"
           />
         </div>
 
@@ -129,7 +129,7 @@ const ThermalCurtainsSection = ({
             <img
               src="/sm.png"
               alt="Interior Pic"
-              className="w-80 h-auto rounded-md shadow-md object-cover"
+              className="w-80 h-40 rounded-md shadow-md object-cover"
             />
     
           </div>
