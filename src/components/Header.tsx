@@ -223,7 +223,7 @@ const Header = () => {
 
 
       {/* Mobile Bottom Nav */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t shadow-inner sm:hidden">
+      <nav className="fixed bottom-4 rounded-2xl left-5 right-5 z-50 bg-white border-t shadow-xl sm:hidden">
         <div className="flex justify-around items-center py-2 text-xs font-medium text-gray-700">
           <a href="#home" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Home className="w-5 h-5 mb-0.5" />

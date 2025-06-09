@@ -17,7 +17,7 @@ const Tcs3 = () => {
   }, []);
 
   return (
-    <section>
+    <section className='bg-white '>
     <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col lg:flex-row items-center justify-between gap-6">
       {/* Text Section */}
       <div className="lg:w-1/2 flex flex-col gap-4">
