@@ -14,6 +14,7 @@ interface ThermalCurtainsSectionProps {
 const ThermalCurtainsSection = ({
   titleLine1 = "Cooler Days,",
   titleLine2 = "Quieter Nights.", 
+  subtitle = "Aziz's", 
   description = (
     <>
       Designed for Dubai’s sun. Made for your comfort.<br />
@@ -35,8 +36,8 @@ const ThermalCurtainsSection = ({
             {titleLine1}
           </h1>
           <h1 className="text-5xl font-bold bg-gradient-to-bl from-champagne-600 to-slate-600 bg-clip-text text-transparent">{titleLine2}</h1>
-          {/* <h2 className="text-2xl text-champagne-600 font-semibold mb-2">{subtitle}</h2> */}
-          <p className="text-lg text-gray-600 leading-relaxed mt-5">{description}</p>
+          <h2 className="text-xl text-champagne-600 font-sans font-regular mt-5 mb-5">{subtitle} <b>Thermal Curtains</b></h2>
+          <p className="text-md text-gray-600 font-sans leading-tight mt-5 ">{description}</p>
         </div>
 
         {/* Right: Image and Testimonial Card */}
@@ -115,7 +116,7 @@ const ThermalCurtainsSection = ({
         <div className="lg:w-1/2 w-full flex flex-col gap-4 px-30">
           <h2 className="text-3xl px-4 text-center sm:text-5xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
             This Isn’t
-            Décor
+            <div className='bg-gradient-to-br from-cyan-500 to-cyan-900 bg-clip-text text-transparent' >Décor </div>
             It’s Your
             Daily Reset!
           </h2>
@@ -125,11 +126,11 @@ const ThermalCurtainsSection = ({
 
         </div>
         {/* Decorative Small Images */}
-          <div className="flex gap-1 mt-4 lg:-mb-32">
+          <div className="flex gap-1 mt-4">
             <img
-              src="/sm.png"
+              src="/small.png"
               alt="Interior Pic"
-              className="w-80 h-40 rounded-md shadow-md object-cover"
+              className="w-80 h-80 rounded-md shadow-md object-cover"
             />
     
           </div>
@@ -145,7 +146,7 @@ const ThermalCurtainsSection = ({
 
           {/* <h2 className="text-5xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
           </h2> */}
-          <p className="text-center sm:text-left px-20 text-2xl sm:text-xl text-gray-400 leading-relaxed">
+          <p className="text-center sm:text-left px-20 text-xl sm:text-sm text-gray-400 leading-relaxed">
             From fabric to fitting,
             we handle every detail
             so your home gets the
@@ -167,7 +168,7 @@ const ThermalCurtainsSection = ({
         {/* Left: right Decor Image */}
         <div className="lg:w-1/2 w-74 lg:ms-0 ms-28 lg:-mt-0 -mt-20 lg:rounded-2xl rounded-md  overflow-hidden shadow-2xl">
           <img
-            src="/large.png"
+            src="/secpart.png"
             alt="Decor Showcase"
             className="w-auto h-auto object-fill shadow-2xl"
           />

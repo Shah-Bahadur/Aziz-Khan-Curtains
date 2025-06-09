@@ -37,10 +37,10 @@ const Index = () => {
       /> */}
       
       </div>
-      <Products />
+      {/* <Products /> */}
       <Services />
       <Contact />
-      <FloatingButton />
+      {/* <FloatingButton /> */}
 
       
       {/* Footer */}
