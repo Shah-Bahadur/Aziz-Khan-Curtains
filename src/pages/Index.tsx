@@ -26,35 +26,81 @@ const Index = () => {
       <Tcs3/>
       
       <TypeCurtainsSection
-        titleLine1="Block the Sun,"
-        titleLine2="Stay Chill."
+        titleLine1="Smarter Spaces,"
+        titleLine2="Better Work."
         subtitle = "Aziz's"
-        curtainsType ="BlackOut Sheer Curtains"
-        imageUrl="/bcu.jpeg"
-        testimonial="Didn’t expect curtains to lower my AC usage this much. I’m genuinely impressed!"
+        curtainsType ="Office Curtains"
+        imageUrl="/office.png"
+        testimonial="As a manager, I needed blinds that looked sleek and worked well. Aziz Khan’s team gave our office a polished, energy-efficient upgrade."
         author="Hina Yousuf"
         authorImageUrl="/reviewer2.png"
         description={
           <>
-            Takecontrol of light, privacy, and comfort — all at once.
-            Aziz's Curtains blend function and elegance, letting you set
-            the mood exactly how you like it, any time of day.
+            Designed for Dubai offices. Built for focus and professionalism.
+            Control glare. Add privacy. Impress your clients.
           </>}
           />
         <TypeCurtainsSection1  
-        section2titlesub1 = "modern Homes"
-        section2Title = "Made for "
-        section2titlesub2 = "Loved by timeless souls"
+        section2titlesub1 = "Smarter"
+        section2Title = "Work"
+        section2titlesub2 = "Design That Reflects Your Vision."
 
-        section2Text = "Dubai’s heat strains ACs, fades interiors, and invites mold — costing comfort, health, and money."
-        section2MainImage = "/large.png"
-        section2DecorImage = "/small.png"
+        section2Text = "Dubai offices battle strong sunlight, screen glare, and distractions. Our office blinds and curtains — like vertical blinds, roller blinds, and blackout shades — are made for productivity and style."
+        section2MainImage = "/office1.png"
+        section2DecorImage = "/office2.png"
         />
         <TypeCurtainsSection2
-        section3Text = "From fabric to fitting,we handle every detail so your home gets the comfort and calm it deserves."
-        section3LeftImage = "/sm.png"
-        section3RightImage = "/secpart.png"
-        section3SideImage = "/curtainssec2.png"
+        section3Text = "Custom Fit & Corporate Finish – From boardrooms to startups, we offer modern, easy-to-maintain materials in neutral and premium tones."
+        section3LeftImage = "/office5.png"
+        section3CenterImage = "/office3.png"
+        section3RightImage = "/office4.png"
+        />
+        <Tcs3
+        headingLines = "Redefine Your "
+        focusWord = " Workspace"
+        headingLines2 = "Aziz Khan Office Curtains"
+        paragraphText = "Blinds or blackout — made to match your team’s focus - Free Fabric Preview at Your Location."
+        images ={['/office6.png', '/office7.png', '/office8.png']}
+  
+        />
+      
+      <TypeCurtainsSection
+        titleLine1="More Than a Sofa..."
+        titleLine2="It’s Where Moments Are Made."
+        subtitle = "Aziz's"
+        curtainsType ="Customized Sofas"
+        imageUrl="/sofa.png"
+        testimonial="They didn’t just fix my sofa — Aziz's Team redefined my living room. Professional team, premium finish, and worth every dirham."
+        author="Hina Yousuf"
+        authorImageUrl="/reviewer2.png"
+        description={
+          <>
+            Each option is crafted to resonate with customers looking for custom sofa making and renovation — 
+            Refresh your existing sofa with a new skin. Choose from a curated collection of fabrics.
+          </>}
+          />
+        <TypeCurtainsSection1  
+        section2titlesub1 = "Sofa Crafting"
+        section2Title = "Bespoke"
+        section2titlesub2 = "Complete Sofa Renovation"
+
+        section2Text = "Old frame, new soul. We restore damaged or dated sofas with structural repair, fresh fabric, and upgraded cushioning — making it look and feel brand new."
+        section2MainImage = "/sofa1.png"
+        section2DecorImage = "/sofa2.png"
+        />
+        <TypeCurtainsSection2
+        section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        section3LeftImage = "/sofa3.png"
+        section3CenterImage = "/sofa4.png"
+        section3RightImage = "/sofa5.png"
+        />
+        <Tcs3
+        headingLines = "Where Style Meets "
+        focusWord = " Comfort."
+        headingLines2 = "Aziz Khan Custom Sofas"
+        paragraphText = "Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        images ={['/sofa6.png', '/sofa7.png', '/sofa8.png']}
+  
         />
       
       </div>

@@ -17,19 +17,19 @@ interface TypeCurtainsSection {
 }
 
 const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
-  titleLine1 = "Cooler Days,",
-  titleLine2 = "Quieter Nights.", 
+  titleLine1 = "Cooler Homes,",
+  titleLine2 = "Softer Moods.", 
   subtitle = "Aziz's", 
-  curtainsType = "Thermal Curtains", 
+  curtainsType = "Home Curtains", 
   description = (
     <>
-      Designed for Dubai’s sun. Made for your comfort.<br />
+      Designed for Dubai homes. Tailored to your lifestyle,<br />
       Save energy. Sleep better. Feel the difference.
     </>
   ),
-  testimonial = "Aziz Khan thermal curtains cut the heat and my energy bill. Didn’t know curtains could make this much difference. Aziz Khan just did it.",
+  testimonial = "We installed Aziz Khan's blackout curtains in our villa — the heat is down, the rooms feel luxurious, and my kids sleep better!",
   author = "Salim A. Naser",
-  imageUrl = "/coolimg.png",
+  imageUrl = "/home.png",
   authorImageUrl = "/reviewer.png",
   
 }) => {
@@ -39,7 +39,7 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-10 gap-12 relative">
         {/* Left: Text Content */}
         <div className="lg:w-1/2 text-left">
-          <h1 className="text-5xl font-bold mb-2 bg-gradient-to-br from-sky-500 to-champagne-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-2 bg-gradient-to-br from-sky-700 to-champagne-600 bg-clip-text text-transparent">
             {titleLine1}
           </h1>
           <h1 className="text-5xl font-bold bg-gradient-to-bl from-champagne-600 to-slate-600 bg-clip-text text-transparent">{titleLine2}</h1>
@@ -48,14 +48,14 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
         </div>
 
         {/* Right: Image and Testimonial Card */}
-        <div className="lg:w-1/2 relative">
+        <div className="lg:w-1/2 relative mt-2 lg:mt-0 flex flex-col items-center lg:gap-20">
           {/* Main Curtain Image */}
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
               src={imageUrl}
               alt="Thermal Curtains"
-              width={500}
-              height={450}
+              width={400}
+              height={250}
               className="object-cover w-full h-full"
             />
           </div>

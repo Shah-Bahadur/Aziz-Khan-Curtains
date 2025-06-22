@@ -9,17 +9,17 @@ interface TypeCurtainsSection2 {
   // Section 3 props
   section3Text?: string;
   section3LeftImage?: string;
+  section3CenterImage?: string;
   section3RightImage?: string;
-  section3SideImage?: string;
 }
 
 const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
 
   
-  section3Text = "From fabric to fitting,we handle every detail so your home gets the comfort and calm it deserves.",
+  section3Text = "From Measuring to Mounting – We handle everything. Choose from a wide variety of colors, fabrics, and styles that match your interior theme.",
   section3LeftImage = "/sm.png",
-  section3RightImage = "/secpart.png",
-  section3SideImage = "/curtainssec2.png",
+  section3CenterImage = "/home3.png",
+  section3RightImage = "/curtainssec2.png",
 }) => {
   return (
     <section className="bg-white flex flex-col gap-12">
@@ -33,7 +33,7 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
 
           {/* <h2 className="text-5xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
           </h2> */}
-          <p className="text-center sm:text-left px-20 text-xl sm:text-sm text-gray-400 leading-relaxed">
+          <p className="text-center px-12 text-xl sm:text-left sm:text-sm text-gray-400 leading-relaxed">
             {section3Text}
           </p>
 
@@ -49,19 +49,19 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
             />
     
           </div>
-        {/* Left: right Decor Image */}
+        {/* Center Decor Image */}
         <div className="lg:w-1/2 w-74 lg:ms-0 ms-28 lg:-mt-0 -mt-10 lg:rounded-2xl rounded-md  overflow-hidden shadow-2xl">
           <img
-            src={section3RightImage}
+            src={section3CenterImage}
             alt="Decor Showcase"
-            className="w-80 h-auto object-fill shadow-2xl"
+            className="w-auto h-auto object-fill shadow-2xl"
           />
         </div>
 
         {/* Decorative Small Images */}
           <div className="flex gap-1 lg:-mt-0 -mt-5 shadow-2xl">
             <img
-              src={section3SideImage}
+              src={section3RightImage}
               alt="Interior Pic"
               className="w-80 h-auto rounded-md shadow-2xl object-cover"
             />

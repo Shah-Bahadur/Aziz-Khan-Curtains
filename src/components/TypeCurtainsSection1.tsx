@@ -16,12 +16,12 @@ interface TypeCurtainsSection1 {
 
 const TypeCurtainsSection1: React.FC<TypeCurtainsSection1> = ({
  
-  section2titlesub1 = "Décor",
-  section2Title = "This Isn’t",
-  section2titlesub2 = "It’s Your Daily Reset!",
-  section2Text = "Dubai’s heat strains ACs, fades interiors, and invites mold — costing comfort, health, and money.",
-  section2MainImage = "/large.png",
-  section2DecorImage = "/small.png",
+  section2titlesub1 = "Curtains",
+  section2Title = "This Isn’t just a",
+  section2titlesub2 = "It’s a Lifestyle Upgrade.",
+  section2Text = "Dubai sun fades sofas, raises energy bills, and disturbs your rest. Our premium home curtains — including blackout curtains, sheer drapes, and thermal fabrics — offer both elegance and insulation.",
+  section2MainImage = "/home1.png",
+  section2DecorImage = "/home2.png",
   
  
 }) => {
