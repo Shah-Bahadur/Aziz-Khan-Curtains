@@ -102,6 +102,44 @@ const Index = () => {
         images ={['/sofa6.png', '/sofa7.png', '/sofa8.png']}
   
         />
+
+        <TypeCurtainsSection
+        titleLine1="Make Every Night"
+        titleLine2=" Feel Special."
+        subtitle = "Aziz's"
+        curtainsType ="Premium Bed Sheets"
+        imageUrl="/bedsheet1.png"
+        testimonial="These aren’t just bedsheets — they’re luxury in fabric form. I never thought a sheet could make such a difference in sleep quality. Highly recommend!"
+        author="Maria Iqbal — Business Bay, Dubai"
+        authorImageUrl={"/maria-iqbal.png"}
+        description={
+          <>
+            Soft to the touch. Styled to your space. Tailored for restful nights in Dubai - Choose from a curated collection of fabrics.
+          </>}
+          />
+        <TypeCurtainsSection1  
+        section2titlesub1 = "Matches"
+        section2Title = "Style That"
+        section2titlesub2 = "Your Home"
+
+        section2Text = "Modern, minimalist, floral, or bold — choose from handpicked patterns and palettes that complement your bedroom interior"
+        section2MainImage = "/bedsheet.png"
+        section2DecorImage = "/bedsheet2.png"
+        />
+        <TypeCurtainsSection2
+        section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        section3LeftImage = "/bedsheet5.png"
+        section3CenterImage = "/bedsheet3.png"
+        section3RightImage = "/bedsheet4.png"
+        />
+        <Tcs3
+        headingLines = "Your Bed, "
+        focusWord = " Your Sanctuary."
+        headingLines2 = "Aziz Khan Bed Sheets"
+        paragraphText = "soft, elegant, and personalized to your comfort. We bring fabric samples to your home, take measurements, and help you style the bedroom you’ve always dreamed of."
+        images ={['/bedsheet6.png', '/bedsheet7.png', '/bedsheet8.png']}
+  
+        />
       
       </div>
       {/* <Products /> */}
@@ -111,7 +149,7 @@ const Index = () => {
 
       
       {/* Footer */}
-      <footer className="bg-charcoal-900 text-white py-8">
+      <footer className="bg-gradient-to-br from-cyan-950 bg-charcoal-500 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <h3 className="text-xl font-bold mb-2">Aziz Khan Curtains</h3>
@@ -119,7 +157,7 @@ const Index = () => {
           </div>
           <div className="border-t border-sage-700 pt-4">
             <p className="text-sm text-luxury-400">
-              © 2024 Aziz Khan Curtains. All rights reserved. | Designed for Quick Service Excellence
+              © 2020 Aziz Khan Curtains. All rights reserved. | Designed for Quick Service Excellence
             </p>
           </div>
         </div>

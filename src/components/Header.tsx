@@ -213,10 +213,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <a
-            href="#book"
-            className="bg-champagne-600 hover:bg-champagne-700 text-white px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
+            href="https://wa.me/923083180744?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
+            target="_blank"
+            rel="noopener noreferrer"
+            className= "bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-base text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
           >
-            Call for Free Consultation
+            Call for <u><b>Free</b></u> Consultation
           </a>
         </div>
       </header>

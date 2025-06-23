@@ -34,8 +34,8 @@ const Services = () => {
     <section id="services" className="py-20 bg-luxury-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-charcoal-900 mb-4">Our Quick Services</h2>
-          <p className="text-xl text-sage-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">Our Quick Services</h2>
+          <p className="text-xl px-6 sm:px-0 text-sage-600 max-w-2xl mx-auto">
             From consultation to installation, we deliver excellence at every step with lightning-fast service.
           </p>
         </div>
