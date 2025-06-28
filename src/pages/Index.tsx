@@ -9,6 +9,7 @@ import TypeCurtainsSection from "@/components/TypeCurtainsSection";
 import TypeCurtainsSection1 from "@/components/TypeCurtainsSection1";
 import TypeCurtainsSection2 from "@/components/TypeCurtainsSection2";
 import Tcs3 from "@/components/Tcs3";
+import Footer from "@/components/Footer";
 import FloatingButton from "@/components/FloatingButton";
 
 
@@ -149,19 +150,8 @@ const Index = () => {
 
       
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-cyan-950 bg-charcoal-500 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-4">
-            <h3 className="text-xl font-bold mb-2">Aziz Khan Curtains</h3>
-            <p className="text-luxury-400">Premium Curtains with Lightning Fast Delivery</p>
-          </div>
-          <div className="border-t border-sage-700 pt-4">
-            <p className="text-sm text-luxury-400">
-              © 2020 Aziz Khan Curtains. All rights reserved. | Designed for Quick Service Excellence
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
+      
     </div>
   );
 };

@@ -173,7 +173,7 @@
 
 import { useEffect, useState } from "react";
 import { Home, ShoppingBag, Settings, Phone } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -205,10 +205,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden sm:flex space-x-4 text-sm font-medium">
-            <a href="#home" className="text-gray-700 hover:text-champagne-600">Home</a>
-            <a href="#process" className="text-gray-700 hover:text-champagne-600">Products</a>
-            <a href="#services" className="text-gray-700 hover:text-champagne-600">Services</a>
-            <a href="#contact" className="text-gray-700 hover:text-champagne-600">Contact</a>
+            <Link to="/" className="text-gray-700 hover:text-champagne-600">Home</Link>
+            <Link to="/products" className="text-gray-700 hover:text-champagne-600">Products</Link>
+            <Link to="/estimate" className="text-gray-700 hover:text-champagne-600">Calculate Cost</Link>
+            <Link to="/about" className="text-gray-700 hover:text-champagne-600">About Us</Link>
           </nav>
 
           {/* CTA Button */}
@@ -227,22 +227,22 @@ const Header = () => {
       {/* Mobile Bottom Nav */}
       <nav className="fixed bottom-4 rounded-2xl left-5 right-5 z-50 bg-white border-t shadow-xl sm:hidden">
         <div className="flex justify-around items-center py-2 text-xs font-medium text-gray-700">
-          <a href="#home" className="flex flex-col items-center hover:text-champagne-600 transition">
+          <Link to="/" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Home className="w-5 h-5 mb-0.5" />
             Home
-          </a>
-          <a href="#process" className="flex flex-col items-center hover:text-champagne-600 transition">
+          </Link>
+          <Link to="/products" className="flex flex-col items-center hover:text-champagne-600 transition">
             <ShoppingBag className="w-5 h-5 mb-0.5" />
             Products
-          </a>
-          <a href="#services" className="flex flex-col items-center hover:text-champagne-600 transition">
+          </Link>
+          <Link to="/estimate" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Settings className="w-5 h-5 mb-0.5" />
-            Services
-          </a>
-          <a href="#contact" className="flex flex-col items-center hover:text-champagne-600 transition">
+            Calculate Cost
+          </Link>
+          <Link to="/about" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Phone className="w-5 h-5 mb-0.5" />
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </>

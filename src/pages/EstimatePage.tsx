@@ -1,176 +1,484 @@
+// import { useState } from "react";
+// import Header from "@/components/Header";
+// import { Card, CardContent } from "@/components/ui/card";
+// import { Button } from "@/components/ui/button";
+// import { Calculator, DollarSign } from "lucide-react";
 
+// const categories = {
+//   "home-curtains": {
+//     label: "Home Curtains",
+//     image: "/public/boc.png",
+//     products: [
+//       { id: "blackout", name: "Blackout Curtains", price: 140 },
+//       { id: "sheer", name: "Sheer Curtains", price: 100 },
+//       { id: "linen", name: "Linen Curtains", price: 120 },
+//     ],
+//   },
+//   "office-curtains": {
+//     label: "Office Curtains",
+//     image: "/public/office1.png",
+//     products: [
+//       { id: "vertical", name: "Vertical Blinds", price: 110 },
+//       { id: "roller", name: "Roller Blinds", price: 130 },
+//     ],
+//   },
+//   "custom-sofas": {
+//     label: "Custom Sofas",
+//     image: "/public/sofa1.png",
+//     products: [
+//       { id: "two-seater", name: "2-Seater Sofa", price: 1200 },
+//       { id: "three-seater", name: "3-Seater Sofa", price: 1600 },
+//       { id: "sectional", name: "Sectional Sofa", price: 2500 },
+//     ],
+//   },
+//   "bedsheets": {
+//     label: "Bedsheets",
+//     image: "/public/bedsheet7.png",
+//     products: [
+//       { id: "cotton", name: "Premium Cotton", price: 180 },
+//       { id: "silk", name: "Silk Touch", price: 250 },
+//     ],
+//   },
+// };
+
+// const EstimatorPage = () => {
+//   const [selectedCategory, setSelectedCategory] = useState("");
+//   const [selectedProduct, setSelectedProduct] = useState("");
+//   const [width, setWidth] = useState("");
+//   const [height, setHeight] = useState("");
+//   const [estimate, setEstimate] = useState(0);
+
+//   const handleCalculate = () => {
+//     if (selectedCategory && selectedProduct) {
+//       const product = categories[selectedCategory].products.find(p => p.id === selectedProduct);
+//       if (!product) return;
+//       const price = product.price;
+//       const isAreaBased = selectedCategory.includes("curtains");
+//       const total = isAreaBased
+//         ? parseFloat(width) * parseFloat(height) * price
+//         : price;
+//       setEstimate(total);
+//     }
+//   };
+
+//   return (
+//     <div className="min-h-screen bg-luxury-50">
+//       <Header />
+
+//       <section className="py-20 bg-gradient-to-br from-champagne-600 via-champagne-700 to-champagne-900 text-white text-center">
+//         <h1 className="text-5xl font-bold mb-4 mt-12">Get Your Instant Estimate</h1>
+//         <p className="text-xl text-luxury-300 max-w-2xl mx-auto">
+//           Choose a category and customize your selection to get an accurate cost estimation.
+//         </p>
+//       </section>
+
+//       <section className="py-16 container mx-auto px-4">
+//         <div className="max-w-4xl mx-auto">
+//           <div className="text-center mb-12">
+//             <Calculator className="w-12 h-12 text-champagne-500 mx-auto mb-4" />
+//             <h2 className="text-3xl font-bold text-charcoal-900">Aziz Services Price Estimator (AED)</h2>
+//             <p className="text-sage-600">Prices include materials and basic service charges</p>
+//           </div>
+
+//           <Card className="border-0 shadow-xl">
+//             <CardContent className="p-8 space-y-10">
+//               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+//                 {Object.entries(categories).map(([key, cat]) => (
+//                   <div key={key}>
+//                     <button
+//                       onClick={() => {
+//                         setSelectedCategory(key);
+//                         setSelectedProduct("");
+//                         setEstimate(0);
+//                         setWidth("");
+//                         setHeight("");
+//                       }}
+//                       className={`p-2 border-2 rounded-lg w-full overflow-hidden transition-all ${
+//                         selectedCategory === key
+//                           ? "border-champagne-500 bg-champagne-50"
+//                           : "border-gray-200 hover:border-champagne-300"
+//                       }`}
+//                     >
+//                       <img
+//                         src={cat.image}
+//                         alt={cat.label}
+//                         className="w-full h-48 object-cover rounded-md mb-2"
+//                       />
+//                       <span className="font-semibold text-charcoal-900 block text-center">
+//                         {cat.label}
+//                       </span>
+//                     </button>
+
+//                     {/* Estimator Block shown directly below selected category */}
+//                     {selectedCategory === key && (
+//                       <div className="mt-6 space-y-6">
+//                         {/* Product Selector */}
+//                         <div>
+//                           <label className="block text-sm font-medium text-charcoal-800 mb-2">
+//                             Choose Product
+//                           </label>
+//                           <div className="grid grid-cols-1 gap-3">
+//                             {cat.products.map((product) => (
+//                               <button
+//                                 key={product.id}
+//                                 onClick={() => {
+//                                   setSelectedProduct(product.id);
+//                                   setEstimate(0);
+//                                 }}
+//                                 className={`p-4 border-2 rounded-lg text-left ${
+//                                   selectedProduct === product.id
+//                                     ? "border-champagne-500 bg-champagne-50"
+//                                     : "border-gray-200 hover:border-champagne-300"
+//                                 }`}
+//                               >
+//                                 <div className="font-semibold text-charcoal-800">{product.name}</div>
+//                                 <div className="text-sage-600 text-sm">AED {product.price}</div>
+//                               </button>
+//                             ))}
+//                           </div>
+//                         </div>
+
+//                         {/* Dimension Inputs */}
+//                         {key.includes("curtains") && selectedProduct && (
+//                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//                             <div>
+//                               <label className="block text-sm text-charcoal-800 mb-1">
+//                                 Width (feet)
+//                               </label>
+//                               <input
+//                                 type="number"
+//                                 value={width}
+//                                 onChange={(e) => setWidth(e.target.value)}
+//                                 placeholder="e.g., 8"
+//                                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500"
+//                               />
+//                             </div>
+//                             <div>
+//                               <label className="block text-sm text-charcoal-800 mb-1">
+//                                 Height (feet)
+//                               </label>
+//                               <input
+//                                 type="number"
+//                                 value={height}
+//                                 onChange={(e) => setHeight(e.target.value)}
+//                                 placeholder="e.g., 10"
+//                                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500"
+//                               />
+//                             </div>
+//                           </div>
+//                         )}
+
+//                         {/* Calculate Button */}
+//                         {selectedProduct && (
+//                           <Button
+//                             onClick={handleCalculate}
+//                             className="w-full bg-champagne-500 hover:bg-champagne-600 text-white font-semibold py-3"
+//                           >
+//                             Calculate Estimate
+//                           </Button>
+//                         )}
+
+//                         {/* Result Display */}
+//                         {estimate > 0 && (
+//                           <div className="text-center mt-6 p-6 bg-charcoal-800 text-white rounded-lg">
+//                             <DollarSign className="w-6 h-6 mx-auto mb-2" />
+//                             <h4 className="text-lg font-semibold mb-1">Estimated Cost</h4>
+//                             <div className="text-3xl font-bold text-champagne-400">
+//                               AED {estimate.toLocaleString()}
+//                             </div>
+//                             <p className="text-sm text-luxury-300 mt-1">
+//                               *Final quote may vary based on customization
+//                             </p>
+//                           </div>
+//                         )}
+//                       </div>
+//                     )}
+//                   </div>
+//                 ))}
+//               </div>
+//             </CardContent>
+//           </Card>
+
+//           {/* CTA Section */}
+//           <div className="flex flex-col items-center mt-16">
+//             <a
+//               href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl"
+//             >
+//               Book <u><b>Free</b></u> Home Visit
+//             </a>
+//             <p className="text-center text-gray-600 py-5 px-4 max-w-md">
+//               Our experts visit with samples and guide you in choosing custom window coverings for free
+//             </p>
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default EstimatorPage;
+
+
+import { useState } from "react";
 import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calculator, Ruler, DollarSign } from "lucide-react";
-import { useState } from "react";
+import { Calculator, DollarSign } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
-const EstimatePage = () => {
+const categories = {
+  "home-curtains": {
+    label: "Home Curtains",
+    image: "/public/boc.png",
+    products: [
+      { id: "blackout", name: "Blackout Curtains", price: 140 },
+      { id: "sheer", name: "Sheer Curtains", price: 100 },
+      { id: "linen", name: "Linen Curtains", price: 120 },
+    ],
+  },
+  "office-curtains": {
+    label: "Office Curtains",
+    image: "/public/office1.png",
+    products: [
+      { id: "vertical", name: "Vertical Blinds", price: 110 },
+      { id: "roller", name: "Roller Blinds", price: 130 },
+    ],
+  },
+  "custom-sofas": {
+    label: "Custom Sofas",
+    image: "/public/sofa1.png",
+    products: [
+      { id: "two-seater", name: "2-Seater Sofa", price: 1200 },
+      { id: "three-seater", name: "3-Seater Sofa", price: 1600 },
+      { id: "sectional", name: "Sectional Sofa", price: 2500 },
+    ],
+  },
+  bedsheets: {
+    label: "Bedsheets",
+    image: "/public/bedsheet7.png",
+    products: [
+      { id: "cotton", name: "Premium Cotton", price: 180 },
+      { id: "silk", name: "Silk Touch", price: 250 },
+    ],
+  },
+};
+
+const EstimatorPage = () => {
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedProduct, setSelectedProduct] = useState("");
   const [width, setWidth] = useState("");
   const [height, setHeight] = useState("");
   const [estimate, setEstimate] = useState(0);
 
-  const productPrices = {
-    "blackout": 150,
-    "sheer": 100,
-    "silk": 250,
-    "roman": 200
-  };
-
-  const productTypes = [
-    { id: "blackout", name: "Blackout Curtains", price: 150 },
-    { id: "sheer", name: "Sheer Curtains", price: 100 },
-    { id: "silk", name: "Silk Drapes", price: 250 },
-    { id: "roman", name: "Roman Blinds", price: 200 }
-  ];
-
-  const calculateEstimate = () => {
-    if (selectedProduct && width && height) {
-      const area = parseFloat(width) * parseFloat(height);
-      const pricePerSqFt = productPrices[selectedProduct as keyof typeof productPrices];
-      const total = area * pricePerSqFt;
+  const handleCalculate = () => {
+    if (selectedCategory && selectedProduct) {
+      const product = categories[selectedCategory].products.find(
+        (p) => p.id === selectedProduct
+      );
+      if (!product) return;
+      const price = product.price;
+      const isAreaBased = selectedCategory.includes("curtains");
+      const total = isAreaBased
+        ? parseFloat(width) * parseFloat(height) * price
+        : price;
       setEstimate(total);
     }
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-luxury-50">
       <Header />
-      
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-charcoal-800 via-charcoal-700 to-charcoal-900">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">Get Your Estimate</h1>
-          <p className="text-xl text-luxury-300 max-w-3xl mx-auto">
-            Use our simple calculator to get an instant estimate for your curtain project. Professional measurement and installation available.
-          </p>
-        </div>
+
+      <section className="py-20 bg-gradient-to-br from-champagne-600 via-champagne-700 to-champagne-900 text-white text-center">
+        <h1 className="text-5xl font-bold mb-4 mt-12">Get Your Instant Estimate</h1>
+        <p className="text-xl text-luxury-300 max-w-2xl mx-auto">
+          Choose a category and customize your selection to get an accurate cost estimation.
+        </p>
       </section>
 
-      {/* Calculator Section */}
-      <section className="py-20 bg-luxury-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Calculator className="w-16 h-16 text-champagne-500 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold text-charcoal-900 mb-4">Curtain Cost Calculator</h2>
-              <p className="text-sage-600">Select your product type and enter dimensions for an instant estimate</p>
-            </div>
+      <section className="py-16 container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <Calculator className="w-12 h-12 text-champagne-500 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold text-charcoal-900">Aziz Services Price Estimator (AED)</h2>
+            <p className="text-sage-600">Prices include materials and basic service charges</p>
+          </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Calculator Form */}
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-charcoal-900 mb-6">Calculate Your Estimate</h3>
-                  
-                  {/* Product Selection */}
-                  <div className="mb-6">
-                    <label className="block text-sm font-medium text-charcoal-800 mb-3">Select Product Type</label>
-                    <div className="grid grid-cols-2 gap-3">
-                      {productTypes.map((product) => (
-                        <button
-                          key={product.id}
-                          onClick={() => setSelectedProduct(product.id)}
-                          className={`p-4 rounded-lg border-2 text-left transition-all ${
-                            selectedProduct === product.id
-                              ? 'border-champagne-500 bg-champagne-50'
-                              : 'border-gray-200 hover:border-champagne-300'
-                          }`}
+          <Card className="border-0 shadow-xl">
+            <CardContent className="p-8 space-y-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {Object.entries(categories).map(([key, cat]) => (
+                  <div key={key}>
+                    <button
+                      onClick={() => {
+                        setSelectedCategory(key);
+                        setSelectedProduct("");
+                        setEstimate(0);
+                        setWidth("");
+                        setHeight("");
+                      }}
+                      className={`p-2 border-2 rounded-lg w-full overflow-hidden transition-all ${
+                        selectedCategory === key
+                          ? "border-champagne-500 bg-champagne-50"
+                          : "border-gray-200 hover:border-champagne-300"
+                      }`}
+                    >
+                      <img
+                        src={cat.image}
+                        alt={cat.label}
+                        className="w-full h-48 object-cover rounded-md mb-2"
+                      />
+                      <span className="font-semibold text-charcoal-900 block text-center">
+                        {cat.label}
+                      </span>
+                    </button>
+
+                    {/* Estimator Block with animation */}
+                    <AnimatePresence>
+                      {selectedCategory === key && (
+                        <motion.div
+                          className="mt-6 space-y-6"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 20 }}
+                          transition={{ duration: 0.3 }}
                         >
-                          <div className="font-semibold text-charcoal-800">{product.name}</div>
-                          <div className="text-sm text-sage-600">Rs. {product.price}/sq ft</div>
-                        </button>
-                      ))}
-                    </div>
+                          {/* Product Selector */}
+                          <div>
+                            <label className="block text-sm font-medium text-charcoal-800 mb-2">
+                              Choose Product
+                            </label>
+                            <div className="grid grid-cols-1 gap-3">
+                              {cat.products.map((product) => (
+                                <motion.button
+                                  key={product.id}
+                                  onClick={() => {
+                                    setSelectedProduct(product.id);
+                                    setEstimate(0);
+                                  }}
+                                  whileTap={{ scale: 0.97 }}
+                                  className={`p-4 border-2 rounded-lg text-left ${
+                                    selectedProduct === product.id
+                                      ? "border-champagne-500 bg-champagne-50"
+                                      : "border-gray-200 hover:border-champagne-300"
+                                  }`}
+                                >
+                                  <div className="font-semibold text-charcoal-800">{product.name}</div>
+                                  <div className="text-sage-600 text-sm">AED {product.price}</div>
+                                </motion.button>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Dimension Inputs with animation */}
+                          <AnimatePresence>
+                            {key.includes("curtains") && selectedProduct && (
+                              <motion.div
+                                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                              >
+                                <div>
+                                  <label className="block text-sm text-charcoal-800 mb-1">
+                                    Width (feet)
+                                  </label>
+                                  <input
+                                    type="number"
+                                    value={width}
+                                    onChange={(e) => setWidth(e.target.value)}
+                                    placeholder="e.g., 8"
+                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500"
+                                  />
+                                </div>
+                                <div>
+                                  <label className="block text-sm text-charcoal-800 mb-1">
+                                    Height (feet)
+                                  </label>
+                                  <input
+                                    type="number"
+                                    value={height}
+                                    onChange={(e) => setHeight(e.target.value)}
+                                    placeholder="e.g., 10"
+                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500"
+                                  />
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+
+                          {/* Calculate Button */}
+                          {selectedProduct && (
+                            <motion.div
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ duration: 0.3 }}
+                            >
+                              <Button
+                                onClick={handleCalculate}
+                                className="w-full bg-champagne-500 hover:bg-champagne-600 text-white font-semibold py-3"
+                              >
+                                Calculate Estimate
+                              </Button>
+                            </motion.div>
+                          )}
+
+                          {/* Result Display */}
+                          <AnimatePresence>
+                            {estimate > 0 && (
+                              <motion.div
+                                className="text-center mt-6 p-6 bg-charcoal-800 text-white rounded-lg"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                              >
+                                <DollarSign className="w-6 h-6 mx-auto mb-2" />
+                                <h4 className="text-lg font-semibold mb-1">Estimated Cost</h4>
+                                <div className="text-3xl font-bold text-champagne-400">
+                                  AED {estimate.toLocaleString()}
+                                </div>
+                                <p className="text-sm text-luxury-300 mt-1">
+                                  *Final quote may vary based on customization
+                                </p>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
-
-                  {/* Dimensions */}
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div>
-                      <label className="block text-sm font-medium text-charcoal-800 mb-2">Width (feet)</label>
-                      <input
-                        type="number"
-                        value={width}
-                        onChange={(e) => setWidth(e.target.value)}
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500 focus:border-transparent"
-                        placeholder="8"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-charcoal-800 mb-2">Height (feet)</label>
-                      <input
-                        type="number"
-                        value={height}
-                        onChange={(e) => setHeight(e.target.value)}
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-champagne-500 focus:border-transparent"
-                        placeholder="10"
-                      />
-                    </div>
-                  </div>
-
-                  <Button 
-                    onClick={calculateEstimate}
-                    className="w-full bg-champagne-500 hover:bg-champagne-600 text-white font-semibold py-3"
-                  >
-                    Calculate Estimate
-                  </Button>
-
-                  {/* Estimate Result */}
-                  {estimate > 0 && (
-                    <div className="mt-6 p-6 bg-charcoal-800 rounded-lg text-white text-center">
-                      <DollarSign className="w-8 h-8 mx-auto mb-2" />
-                      <h4 className="text-lg font-semibold mb-2">Estimated Cost</h4>
-                      <div className="text-3xl font-bold text-champagne-400">Rs. {estimate.toLocaleString()}</div>
-                      <p className="text-sm text-luxury-300 mt-2">*Price includes material and basic installation</p>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-
-              {/* Additional Info */}
-              <div className="space-y-6">
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <Ruler className="w-8 h-8 text-champagne-500 mb-4" />
-                    <h3 className="text-lg font-bold text-charcoal-900 mb-3">Need Accurate Measurements?</h3>
-                    <p className="text-sage-600 mb-4">Get professional measurement service at your doorstep for precise estimates.</p>
-                    <Button className="w-full bg-charcoal-800 hover:bg-charcoal-700 text-white">
-                      Book Free Measurement
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-bold text-charcoal-900 mb-3">What's Included:</h3>
-                    <ul className="space-y-2 text-sage-600">
-                      <li className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-champagne-500 rounded-full"></div>
-                        <span>Premium quality materials</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-champagne-500 rounded-full"></div>
-                        <span>Professional installation</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-champagne-500 rounded-full"></div>
-                        <span>Hardware and accessories</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-champagne-500 rounded-full"></div>
-                        <span>Quality guarantee</span>
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
+                ))}
               </div>
-            </div>
+            </CardContent>
+          </Card>
+
+          {/* CTA Section (unchanged) */}
+          <div className="flex flex-col items-center mt-16">
+            <a
+              href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl"
+            >
+              Book <u><b>Free</b></u> Home Visit
+            </a>
+            <p className="text-center text-gray-600 py-5 px-4 max-w-md">
+              Our experts visit with samples and guide you in choosing custom window coverings for free
+            </p>
           </div>
         </div>
       </section>
+      <Contact />
+      <Footer />
     </div>
   );
 };
 
-export default EstimatePage;
+export default EstimatorPage;

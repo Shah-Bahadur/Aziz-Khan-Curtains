@@ -1,8 +1,10 @@
-
 import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Award, Users, Clock } from "lucide-react";
+
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const AboutPage = () => {
   const stats = [
@@ -16,86 +18,118 @@ const AboutPage = () => {
     {
       icon: Award,
       title: "Quality Excellence",
-      description: "We use only the finest materials and craftsmanship to ensure lasting beauty and functionality."
+      description: "Only premium materials and expert craftsmanship go into every product we create."
     },
     {
       icon: Clock,
-      title: "Quick Service",
-      description: "Lightning-fast delivery and installation without compromising on quality or attention to detail."
+      title: "Swift Turnaround",
+      description: "Fast delivery and precise installation, without cutting corners."
     },
     {
       icon: Users,
-      title: "Customer Focus",
-      description: "Every project is tailored to your unique needs with personalized service and expert guidance."
+      title: "Client-First Ethos",
+      description: "We listen, understand, and personalize every experience for your space."
     },
     {
       icon: Home,
-      title: "Home Transformation",
-      description: "We don't just sell curtains; we transform spaces into beautiful, comfortable living environments."
+      title: "Holistic Transformation",
+      description: "From bland rooms to breathtaking interiors — we don’t decorate, we elevate."
     }
   ];
 
   return (
     <div className="min-h-screen">
       <Header />
-      
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-charcoal-800 via-charcoal-700 to-charcoal-900">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-white mb-6">About Aziz Khan Curtains</h1>
-              <p className="text-xl text-luxury-300 mb-8 leading-relaxed">
-                For over a decade, Aziz Khan Curtains has been transforming homes across Pakistan with premium quality curtains and lightning-fast service. We combine traditional craftsmanship with modern efficiency to deliver exceptional results.
+
+      {/* 1. Hero Section */}
+      <section className=" text-center sm:text-left py-16 sm:py-24 bg-gradient-to-br from-champagne-900 via-cyan-950 to-champagne-900">
+        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-3xl sm:text-5xl font-bold text-white mb-6 mt-12 leading-tight">
+              Transform Home, with 
+              <br />Aziz Khan Curtains
+            </h1>
+            <p className="text-lg sm:text-xl text-luxury-300 mb-8 leading-relaxed">
+              At Aziz Khan Curtains, we don’t just hang fabrics — we craft comfort, style, and identity for your living spaces.
+              Our mission is to bring warmth, elegance, and ease into every home we touch.
+            </p>
+            <div className="flex flex-col items-center sm:items-start mt-10">
+              <a
+                href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-3 rounded-lg text-lg transition-all duration-300 shadow-xl"
+              >
+                Book <u><b>Free</b></u> Home Visit
+              </a>
+              <p className="text-center sm:text-left text-gray-100 py-5 px-0 max-w-md">
+                Our experts visit with samples and guide you in choosing custom window coverings for free
               </p>
-              <div className="grid grid-cols-2 gap-6">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-champagne-400">{stat.number}</div>
-                    <div className="text-luxury-300">{stat.label}</div>
-                  </div>
-                ))}
+            </div>
+          </div>
+          <div className="relative mx-auto w-full max-w-xs sm:ml-60 sm:max-w-sm mt-12 md:max-w-md lg:w-[400px] lg:h-[500px]">
+            <img
+              src="/public/home6.png"
+              alt="Aziz Khan Curtains in Action"
+              className="rounded-xl shadow-2xl w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Brand Story */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
+          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 mb-6">Our Journey</h2>
+          <p className="text-md sm:text-lg text-sage-600 leading-relaxed mb-4">
+            Founded with a vision to redefine how people feel about their homes, Aziz Khan started with a simple idea:
+            luxury shouldn’t be slow, and style shouldn’t be complicated.
+          </p>
+          <p className="text-md sm:text-lg text-sage-600 leading-relaxed">
+            Today, our reputation as Pakistan’s fastest, most design-savvy curtain experts is built on delivering results
+            that wow — without the wait.
+          </p>
+        </div>
+      </section>
+
+      {/* 2.1 Service Areas */}
+      <section className="py-12 bg-luxury-50">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-charcoal-900 mb-4">Serving Homes Across Dubai</h2>
+          <p className="text-md sm:text-lg text-sage-700">
+            From Downtown to Jumeirah, Dubai Marina to Business Bay — our curtain experts bring style, speed, and service to every corner of the city.
+          </p>
+        </div>
+      </section>
+
+      {/* 3. Stats Section */}
+      <section className="py-16 bg-luxury-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl sm:text-4xl font-bold text-charcoal-900 text-center mb-12">Why Customers Trust Us</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+            {stats.map((stat, index) => (
+              <div key={index}>
+                <div className="text-3xl sm:text-4xl font-bold text-champagne-500">{stat.number}</div>
+                <div className="text-charcoal-700 text-md sm:text-lg">{stat.label}</div>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" 
-                alt="About Aziz Khan Curtains"
-                className="rounded-lg shadow-2xl"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="py-20 bg-white">
+      {/* 4. Core Values */}
+      <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-charcoal-900 mb-8">Our Story</h2>
-            <p className="text-lg text-sage-600 mb-8 leading-relaxed">
-              Founded by Aziz Khan with a vision to bring luxury and comfort to every home, our company started as a small family business with big dreams. Today, we're proud to be one of Pakistan's leading curtain specialists, serving thousands of satisfied customers with our commitment to quality and speed.
-            </p>
-            <p className="text-lg text-sage-600 leading-relaxed">
-              What sets us apart is our unique combination of premium materials, expert craftsmanship, and lightning-fast delivery. We understand that your home is your sanctuary, and we're dedicated to making it as beautiful and comfortable as possible.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Values */}
-      <section className="py-20 bg-luxury-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-charcoal-900 text-center mb-16">Our Values</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 text-center mb-12 sm:mb-16">Our Promise To You</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="bg-champagne-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <value.icon className="w-8 h-8 text-white" />
+                <CardContent className="p-6 sm:p-8">
+                  <div className="bg-champagne-500 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                    <value.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-charcoal-900 mb-4">{value.title}</h3>
-                  <p className="text-sage-600 leading-relaxed">{value.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-charcoal-900 mb-2 sm:mb-4">{value.title}</h3>
+                  <p className="text-sage-600 text-sm sm:text-base leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -103,73 +137,60 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Free Home Visit CTA */}
-      <section className="py-20 bg-gradient-to-r from-champagne-500 to-champagne-600">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <Home className="w-16 h-16 text-white mx-auto mb-6" />
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Home?</h2>
-            <p className="text-xl text-champagne-100 mb-8 leading-relaxed">
-              Book a free home visit and let our experts help you choose the perfect curtains for your space. We'll provide professional measurement, consultation, and a detailed quote at no cost.
-            </p>
-            <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button className="bg-white text-champagne-600 hover:bg-luxury-50 font-semibold px-8 py-3 text-lg">
-                Book Free Home Visit
-              </Button>
-              <Button className="bg-charcoal-800 hover:bg-charcoal-700 text-white font-semibold px-8 py-3 text-lg">
-                Call Now: +92 300 1234567
-              </Button>
-            </div>
+      {/* 5. Team */}
+      <section className="py-16 sm:py-20 bg-luxury-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 text-center mb-12">Meet the People Behind the Craft</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              { name: "Aziz Khan", title: "Founder & CEO", color: "bg-champagne-500", initials: "AK", desc: "Leading with vision and over a decade of experience in textile and interiors." },
+              { name: "Muhammad Tariq", title: "Head of Design", color: "bg-charcoal-800", initials: "MT", desc: "Crafts spaces that reflect your personality with design precision." },
+              { name: "Sohail Ahmed", title: "Installation Manager", color: "bg-sage-600", initials: "SA", desc: "Turns your concept into reality with expert installation delivery." }
+            ].map((member, i) => (
+              <Card key={i} className="text-center border-0 shadow-lg">
+                <CardContent className="p-6 sm:p-8">
+                  <div className={`w-20 h-20 ${member.color} rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center`}>
+                    <span className="text-xl sm:text-2xl font-bold text-white">{member.initials}</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-charcoal-900 mb-2">{member.name}</h3>
+                  <p className="text-champagne-600 font-semibold mb-3">{member.title}</p>
+                  <p className="text-sage-600 text-sm sm:text-base">{member.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-sage-600 max-w-2xl mx-auto">
-              Our experienced professionals are dedicated to bringing your vision to life with expertise and care.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="text-center border-0 shadow-lg">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-champagne-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">AK</span>
-                </div>
-                <h3 className="text-xl font-bold text-charcoal-900 mb-2">Aziz Khan</h3>
-                <p className="text-champagne-600 font-semibold mb-4">Founder & CEO</p>
-                <p className="text-sage-600">Leading the company with over 10 years of experience in premium curtain solutions.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center border-0 shadow-lg">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-charcoal-800 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">MT</span>
-                </div>
-                <h3 className="text-xl font-bold text-charcoal-900 mb-2">Muhammad Tariq</h3>
-                <p className="text-champagne-600 font-semibold mb-4">Head of Design</p>
-                <p className="text-sage-600">Expert in interior design and curtain styling with a keen eye for detail.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center border-0 shadow-lg">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-sage-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">SA</span>
-                </div>
-                <h3 className="text-xl font-bold text-charcoal-900 mb-2">Sohail Ahmed</h3>
-                <p className="text-champagne-600 font-semibold mb-4">Installation Manager</p>
-                <p className="text-sage-600">Ensuring perfect installation with our team of certified professionals.</p>
-              </CardContent>
-            </Card>
+      {/* 6. Final CTA */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-champagne-900 via-cyan-950 to-champagne-900">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <Home className="w-12 h-12 sm:w-16 sm:h-16 text-white mx-auto mb-4 sm:mb-6" />
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">Book Your Free Home Visit</h2>
+          <p className="text-md sm:text-xl text-champagne-100 mb-6 sm:mb-8 leading-relaxed">
+            Let us visit your home, measure your space, and bring ideas to life — all at no cost.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+          href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+          target="_blank"
+          rel="noopener noreferrer"
+        className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+              Book <u><b>Free</b></u> Home Visit
+        </a>
+            <a
+          href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+          target="_blank"
+          rel="noopener noreferrer"
+        className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+              <u><b>+92-3083180744</b></u>
+            </a>
           </div>
         </div>
       </section>
+
+      <Contact />
+      <Footer />
     </div>
   );
 };

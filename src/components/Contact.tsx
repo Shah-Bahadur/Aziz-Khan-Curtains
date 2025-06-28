@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Get Your Quote Today</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get Your Quote Today</h2>
           <p className="text-xl text-cyan-900 max-w-2xl mx-auto">
             Ready to transform your space? Contact us now for a free consultation and quick delivery.
           </p>
