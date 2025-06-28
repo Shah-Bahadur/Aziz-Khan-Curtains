@@ -234,7 +234,7 @@ import Footer from "@/components/Footer";
 const categories = {
   "home-curtains": {
     label: "Home Curtains",
-    image: "/public/boc.png",
+    image: "/boc.png",
     products: [
       { id: "blackout", name: "Blackout Curtains", price: 140 },
       { id: "sheer", name: "Sheer Curtains", price: 100 },
@@ -243,7 +243,7 @@ const categories = {
   },
   "office-curtains": {
     label: "Office Curtains",
-    image: "/public/office1.png",
+    image: "/office1.png",
     products: [
       { id: "vertical", name: "Vertical Blinds", price: 110 },
       { id: "roller", name: "Roller Blinds", price: 130 },
@@ -251,7 +251,7 @@ const categories = {
   },
   "custom-sofas": {
     label: "Custom Sofas",
-    image: "/public/sofa1.png",
+    image: "/sofa1.png",
     products: [
       { id: "two-seater", name: "2-Seater Sofa", price: 1200 },
       { id: "three-seater", name: "3-Seater Sofa", price: 1600 },
@@ -260,7 +260,7 @@ const categories = {
   },
   bedsheets: {
     label: "Bedsheets",
-    image: "/public/bedsheet7.png",
+    image: "/bedsheet7.png",
     products: [
       { id: "cotton", name: "Premium Cotton", price: 180 },
       { id: "silk", name: "Silk Touch", price: 250 },

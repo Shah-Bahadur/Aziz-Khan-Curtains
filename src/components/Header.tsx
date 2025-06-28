@@ -241,7 +241,7 @@ const Header = () => {
           </Link>
           <Link to="/about" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Phone className="w-5 h-5 mb-0.5" />
-            Contact
+            About Us
           </Link>
         </div>
       </nav>
