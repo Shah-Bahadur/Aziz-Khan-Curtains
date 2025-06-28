@@ -171,23 +171,23 @@
 
 
 
-import { useEffect, useState } from "react";
-import { Home, ShoppingBag, Settings, Phone } from "lucide-react";
+import { Profiler, useEffect, useState } from "react";
+import { Home, ShoppingBag, Settings, Phone, BedIcon, DiscIcon, FileIcon, SkullIcon, StoreIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setShowHeader(currentScrollY < lastScrollY);
-      setLastScrollY(currentScrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     setShowHeader(currentScrollY < lastScrollY);
+  //     setLastScrollY(currentScrollY);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [lastScrollY]);
 
   return (
     <>
@@ -225,7 +225,8 @@ const Header = () => {
 
 
       {/* Mobile Bottom Nav */}
-      <nav className="fixed bottom-4 rounded-2xl left-5 right-5 z-50 bg-white border-t shadow-xl sm:hidden">
+      <nav className="fixed bottom-4 rounded-2xl left-5 right-5 z-50 bg-white border border-champagne-700 shadow-xl sm:hidden">
+
         <div className="flex justify-around items-center py-2 text-xs font-medium text-gray-700">
           <Link to="/" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Home className="w-5 h-5 mb-0.5" />
@@ -240,9 +241,13 @@ const Header = () => {
             Calculate Cost
           </Link>
           <Link to="/about" className="flex flex-col items-center hover:text-champagne-600 transition">
-            <Phone className="w-5 h-5 mb-0.5" />
+            <StoreIcon className="w-5 h-5 mb-0.5" />
             About Us
           </Link>
+          <Link to="https://wa.me/923083180744?text=Hi..." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
+          <Phone className="w-5 h-5 mb-0.5" />
+          WhatsApp Us
+        </Link>
         </div>
       </nav>
     </>
