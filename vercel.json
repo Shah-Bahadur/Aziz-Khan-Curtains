@@ -1,0 +1,21 @@
+{
+    "routes" : [
+        {
+            "src": "/",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/ProductPage",
+            "dest": "/"
+        },
+        {
+            "src": "/AboutPage",
+            "dest": "/"
+        },
+        {
+            "src": "/EstimatePage",
+            "dest": "/"
+        }
+        
+    ] 
+}
