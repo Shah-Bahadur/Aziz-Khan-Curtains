@@ -13,28 +13,28 @@ const Hero = () => {
       highlight: "Premium Curtains",
       description:
         "Professional installation, premium quality fabrics, and lightning-fast delivery. Experience the difference with Aziz Khan Curtains.",
-      image: "/home.png",
+      image: "/home.webp",
     },
     {
       title: "Design a Productive Space with",
       highlight: "Office Blinds & Curtains",
       description:
         "From boardrooms to coworking spaces — we provide vertical blinds, roller shades, and custom curtains to reduce glare and boost focus.",
-      image: "/office.png",
+      image: "/office.webp",
     },
     {
       title: "Comfort Meets Craftsmanship in",
       highlight: "Customized Sofas",
       description:
         "From full sofa builds to professional renovation and upholstery — we craft seating that suits your style and space perfectly.",
-      image: "/sofa1.png",
+      image: "/sofa1.webp",
     },
     {
       title: "Softness that redefines sleep with",
       highlight: "Tailored Bedsheets",
       description:
         "Made-to-fit bed linens in luxurious fabrics and elegant designs. Say goodbye to wrinkled sheets and hello to restful nights.",
-      image: "/bedsheet7.png",
+      image: "/bedsheet7.webp",
     },
   ];
 

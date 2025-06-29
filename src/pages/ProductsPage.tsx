@@ -32,7 +32,7 @@ return (
         focusWord = " Your Sanctuary."
         headingLines2 = "Aziz Khan Bed Sheets"
         paragraphText = "soft, elegant, and personalized to your comfort. We bring fabric samples to your home, take measurements, and help you style the bedroom you’ve always dreamed of."
-        images ={['/bedsheet6.png', '/bedsheet7.png', '/bedsheet8.png']}
+        images ={['/bedsheet6.webp', '/bedsheet7.webp', '/bedsheet8.webp']}
   
         />
         <Services/>

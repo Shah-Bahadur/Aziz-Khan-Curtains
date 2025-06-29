@@ -31,7 +31,7 @@ const Index = () => {
         titleLine2="Better Work."
         subtitle = "Aziz's"
         curtainsType ="Office Curtains"
-        imageUrl="/office.png"
+        imageUrl="/office.webp"
         testimonial="As a manager, I needed blinds that looked sleek and worked well. Aziz Khan’s team gave our office a polished, energy-efficient upgrade."
         author="Hina Yousuf"
         authorImageUrl="/reviewer2.png"
@@ -70,7 +70,7 @@ const Index = () => {
         titleLine2="It’s Where Moments Are Made."
         subtitle = "Aziz's"
         curtainsType ="Customized Sofas"
-        imageUrl="/sofa.png"
+        imageUrl="/sofa.webp"
         testimonial="They didn’t just fix my sofa — Aziz's Team redefined my living room. Professional team, premium finish, and worth every dirham."
         author="Hina Yousuf"
         authorImageUrl="/reviewer2.png"
@@ -86,7 +86,7 @@ const Index = () => {
         section2titlesub2 = "Complete Sofa Renovation"
 
         section2Text = "Old frame, new soul. We restore damaged or dated sofas with structural repair, fresh fabric, and upgraded cushioning — making it look and feel brand new."
-        section2MainImage = "/sofa1.png"
+        section2MainImage = "/sofa1.webp"
         section2DecorImage = "/sofa2.png"
         />
         <TypeCurtainsSection2
@@ -109,7 +109,7 @@ const Index = () => {
         titleLine2=" Feel Special."
         subtitle = "Aziz's"
         curtainsType ="Premium Bed Sheets"
-        imageUrl="/bedsheet1.png"
+        imageUrl="/bedsheet1.webp"
         testimonial="These aren’t just bedsheets — they’re luxury in fabric form. I never thought a sheet could make such a difference in sleep quality. Highly recommend!"
         author="Maria Iqbal — Business Bay, Dubai"
         authorImageUrl={"/maria-iqbal.png"}
@@ -124,21 +124,21 @@ const Index = () => {
         section2titlesub2 = "Your Home"
 
         section2Text = "Modern, minimalist, floral, or bold — choose from handpicked patterns and palettes that complement your bedroom interior"
-        section2MainImage = "/bedsheet.png"
-        section2DecorImage = "/bedsheet2.png"
+        section2MainImage = "/bedsheet.webp"
+        section2DecorImage = "/bedsheet2.webp"
         />
         <TypeCurtainsSection2
         section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
-        section3LeftImage = "/bedsheet5.png"
-        section3CenterImage = "/bedsheet3.png"
-        section3RightImage = "/bedsheet4.png"
+        section3LeftImage = "/bedsheet5.webp"
+        section3CenterImage = "/bedsheet3.webp"
+        section3RightImage = "/bedsheet4.webp"
         />
         <Tcs3
         headingLines = "Your Bed, "
         focusWord = " Your Sanctuary."
         headingLines2 = "Aziz Khan Bed Sheets"
         paragraphText = "soft, elegant, and personalized to your comfort. We bring fabric samples to your home, take measurements, and help you style the bedroom you’ve always dreamed of."
-        images ={['/bedsheet6.png', '/bedsheet7.png', '/bedsheet8.png']}
+        images ={['/bedsheet6.webp', '/bedsheet7.webp', '/bedsheet8.webp']}
   
         />
       

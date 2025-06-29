@@ -234,7 +234,7 @@ import Footer from "@/components/Footer";
 const categories = {
   "home-curtains": {
     label: "Home Curtains",
-    image: "/boc.png",
+    image: "/boc.webp",
     products: [
       { id: "blackout", name: "Blackout Curtains", price: 140 },
       { id: "sheer", name: "Sheer Curtains", price: 100 },
@@ -251,7 +251,7 @@ const categories = {
   },
   "custom-sofas": {
     label: "Custom Sofas",
-    image: "/sofa1.png",
+    image: "/sofa1.webp",
     products: [
       { id: "two-seater", name: "2-Seater Sofa", price: 1200 },
       { id: "three-seater", name: "3-Seater Sofa", price: 1600 },
@@ -260,7 +260,7 @@ const categories = {
   },
   bedsheets: {
     label: "Bedsheets",
-    image: "/bedsheet7.png",
+    image: "/bedsheet7.webp",
     products: [
       { id: "cotton", name: "Premium Cotton", price: 180 },
       { id: "silk", name: "Silk Touch", price: 250 },
