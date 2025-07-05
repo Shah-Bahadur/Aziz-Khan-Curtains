@@ -42,7 +42,7 @@ const Hero = () => {
     if (!api) return;
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [api]);
 
