@@ -146,10 +146,20 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
                   {product.description}
                 </p>
 
-                {product.cta && (
+                {/* {product.cta && (
                   <button className="mt-auto inline-block bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:shadow-lg text-gray-900 font-semibold px-5 py-2 rounded-lg text-sm transition">
                     {product.cta}
                   </button>
+                )} */}
+                {product.cta && (
+                  <a
+                    href={`https://wa.me/+971503635428?text=Hi, I'm interested in ${encodeURIComponent(product.title)}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-auto inline-block text-center bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:shadow-lg text-gray-900 font-semibold px-5 py-2 rounded-lg text-sm transition"
+                  >
+                    {product.cta}
+                  </a>
                 )}
               </div>
             </div>

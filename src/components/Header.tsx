@@ -41,7 +41,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/923083180744?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
+            href="https://wa.me/+971503635428?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"

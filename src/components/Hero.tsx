@@ -77,7 +77,7 @@ const Hero = () => {
 
                       <div className="flex flex-col sm:flex-row gap-4">
                         <a
-                href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
+                href="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
                 target="_blank"
                 rel="noopener noreferrer"
                 >
