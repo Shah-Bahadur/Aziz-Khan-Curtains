@@ -27,7 +27,11 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <p className="text-cyan-900">+971-503635428</p>
+                      <a 
+                      href="tel:+971503635428"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-cyan-900 hover:underline">+971-503635428</a>
                     </div>
                   </div>
                   
@@ -37,7 +41,10 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a className="">info@azizkhanacurtains.com</a>
+                      <a 
+                      href="mailto:azizkhancurtains@gmail.com"
+                      className="text-sm hover:underline">
+                        info@azizkhanacurtains.com</a>
                     </div>
                   </div>
                   
@@ -47,7 +54,14 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p className="">Al Guwair Market, Near NMC Hospital, Sharjah - UAE</p>
+                      <a
+                        href="https://maps.app.goo.gl/xEuTSGfoaxKr11a48?g_st=aw"  // Replace with your exact link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm  hover:underline"
+                      >
+                        Al Guwair Market, Near NMC Hospital, Sharjah - UAE
+                      </a>
                     </div>
                   </div>
                   

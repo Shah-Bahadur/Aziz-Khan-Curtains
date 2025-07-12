@@ -35,7 +35,7 @@ const Header = () => {
           <nav className="hidden sm:flex space-x-4 text-sm font-medium">
             <Link to="/" className="text-gray-700 hover:text-champagne-600">Home</Link>
             <Link to="/products" className="text-gray-700 hover:text-champagne-600">Products</Link>
-            <Link to="/estimate" className="text-gray-700 hover:text-champagne-600">Our Work</Link>
+            <Link to="/our_work" className="text-gray-700 hover:text-champagne-600">Our Work</Link>
             <Link to="/about" className="text-gray-700 hover:text-champagne-600">About Us</Link>
           </nav>
 
@@ -64,7 +64,7 @@ const Header = () => {
             <ShoppingBag className="w-5 h-5 mb-0.5" />
             Products
           </Link>
-          <Link to="/estimate" className="flex flex-col items-center hover:text-champagne-600 transition">
+          <Link to="/our_work" className="flex flex-col items-center hover:text-champagne-600 transition">
             <Settings className="w-5 h-5 mb-0.5" />
             Our Work
           </Link>

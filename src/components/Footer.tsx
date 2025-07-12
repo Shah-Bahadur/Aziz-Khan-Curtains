@@ -23,12 +23,13 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-// import {
-//   FaFacebookF,
-//   FaInstagram,
-//   FaYoutube,
-//   FaXTwitter,
-// } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -61,13 +62,13 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex justify-center gap-6 text-xl text-luxury-300">
           <a href="#" className="hover:text-white" aria-label="Facebook">
-            {/* <FaFacebookF /> */}
+            <FaFacebookF />
           </a>
           <a href="#" className="hover:text-white" aria-label="Instagram">
-            {/* <FaInstagram /> */}
+            <FaInstagram />
           </a>
           <a href="#" className="hover:text-white" aria-label="YouTube">
-            {/* <FaYoutube /> */}
+            <FaTiktok />
           </a>
           <a href="#" className="hover:text-white" aria-label="Twitter/X">
             {/* <FaXTwitter /> */}

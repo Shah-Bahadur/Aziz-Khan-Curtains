@@ -639,9 +639,12 @@ const servicesWithProjects = [
     description:
       'Bespoke curtains tailored to your style — from fabric selection to final installation.',
     images: [
-      '/home1.png',
-      'home2.png',
-      '/home3.png',
+      '/hw1.jpg',
+      '/hw2.jpg',
+      '/hw3.jpg',
+      '/hw4.jpg',
+      '/hw5.jpg',
+      '/hw6.jpg',
     ],
   },
   {
@@ -663,8 +666,8 @@ const servicesWithProjects = [
       'Modern and motorized blinds — ideal for light control, privacy, and elegance.',
     images: [
       '/blindsw.jpg',
-      '/projects/blinds2.jpg',
-      '/projects/blinds3.jpg',
+      '/office2.png',
+      '/office4.png',
     ],
   },
   {
@@ -672,9 +675,9 @@ const servicesWithProjects = [
     description:
       'Premium bed linens and custom-made fabrics to elevate your home comfort.',
     images: [
-      '/projects/bedsheet1.jpg',
-      '/projects/bedsheet2.jpg',
-      '/projects/bedsheet3.jpg',
+      '/bsp2.jpg',
+      '/bsp13.png',
+      '/bsp16.jpg',
     ],
   },
 ];
@@ -734,23 +737,21 @@ const OurWork: React.FC = () => {
           <p className="text-gray-600 mb-6 max-w-2xl">
             {service.description}
           </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {service.images.map((img, i) => (
-              <div
-                key={i}
-                className="relative group rounded-xl overflow-hidden shadow hover:shadow-lg transition"
-              >
-                <img
-                  src={img}
-                  alt={`${service.name} Project ${i + 1}`}
-                  className="w-full h-64 object-cover"
-                />
-                
-              </div>
-            ))}
-
-            
-          </div>
+          {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
+         <div className="overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 flex space-x-4 pb-4">
+          {service.images.map((img, i) => (
+            <div
+              key={i}
+              className="min-w-full sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+            >
+              <img
+                src={img}
+                alt={`${service.name} Project ${i + 1}`}
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          ))}
+        </div>
           <div className="mt-6 flex justify-center">
       <a
         href="https://wa.me/+971503635428" // Replace with your actual WhatsApp number
@@ -763,6 +764,9 @@ const OurWork: React.FC = () => {
       </div>
         </section>
       ))}
+
+
+
 
       {/* Testimonials Section */}
       <div className="mt-20">
