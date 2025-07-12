@@ -27,7 +27,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <p className="text-cyan-900">+92 300 1234567</p>
+                      <p className="text-cyan-900">+971-503635428</p>
                     </div>
                   </div>
                   
@@ -37,7 +37,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="">info@azizkhanacurtains.com</p>
+                      <a className="">info@azizkhanacurtains.com</a>
                     </div>
                   </div>
                   
@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p className="">Main Market, Lahore, Pakistan</p>
+                      <p className="">Al Guwair Market, Near NMC Hospital, Sharjah - UAE</p>
                     </div>
                   </div>
                   
@@ -57,7 +57,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Working Hours</p>
-                      <p className="">Mon-Sun: 8AM - 10PM</p>
+                      <p className="">Mon-Sun: 09:00AM - 11:00PM</p>
                     </div>
                   </div>
                 </div>
@@ -100,11 +100,11 @@ const Contact = () => {
                 <div>
                   <label className="block text-sm font-medium mb-2">Service Type</label>
                   <select className="w-full p-3 border border-luxury-300 rounded-lg focus:ring-2 focus:ring-champagne-500 focus:border-champagne-500">
-                    <option>Blackout Curtains</option>
-                    <option>Silk Drapes</option>
-                    <option>Sheer Curtains</option>
-                    <option>Roman Blinds</option>
-                    <option>Custom Design</option>
+                    <option>Home Curtains Installation</option>
+                    <option>Office Curtains Installation</option>
+                    <option>Sofa Work</option>
+                    <option>Bed Sheets</option>
+                    <option>other</option>
                   </select>
                 </div>
                 
@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
                 
                 <a
-                href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
+                href="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
                 target="_blank"
                 rel="noopener noreferrer"
                 >

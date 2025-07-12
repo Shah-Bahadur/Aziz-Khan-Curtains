@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 const AboutPage = () => {
   const stats = [
     { number: "5000+", label: "Happy Customers" },
-    { number: "10+", label: "Years Experience" },
-    { number: "24hr", label: "Quick Delivery" },
+    { number: "25+", label: "Years of Exellence" },
+    { number: "Quick", label: "Delivery" },
     { number: "100%", label: "Satisfaction Rate" }
   ];
 
@@ -55,7 +55,7 @@ const AboutPage = () => {
             </p>
             <div className="flex flex-col items-center sm:items-start mt-10">
               <a
-                href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+                href="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-3 rounded-lg text-lg transition-all duration-300 shadow-xl"
@@ -77,7 +77,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* 2. Brand Story */}
+      {/* 2. Brand Story
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 mb-6">Our Journey</h2>
@@ -90,7 +90,34 @@ const AboutPage = () => {
             that wow — without the wait.
           </p>
         </div>
-      </section>
+      </section> */}
+
+          <section className="py-16 sm:py-20 bg-white">
+      <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center max-w-6xl gap-10">
+        {/* Text Content */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-900 mb-6">Our Journey</h2>
+          <p className="text-md sm:text-lg text-sage-600 leading-relaxed mb-4">
+            Founded with a vision to redefine how people feel about their homes, Aziz Khan started with a simple idea:
+            luxury shouldn’t be slow, and style shouldn’t be complicated.
+          </p>
+          <p className="text-md sm:text-lg text-sage-600 leading-relaxed">
+            Today, our reputation as Dubai’s fastest, most design-savvy curtain experts is built on delivering results
+            that wow — without the wait.
+          </p>
+        </div>
+
+        {/* Image */}
+        <div className="w-full lg:w-1/2">
+  <img
+    src="/sign.png"
+    alt="Aziz Khan Signature"
+    className="object-contain w-auto h-auto max-h-[400px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+  />
+</div>
+
+      </div>
+    </section>
 
       {/* 2.1 Service Areas */}
       <section className="py-12 bg-luxury-50">
@@ -109,7 +136,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index}>
-                <div className="text-3xl sm:text-4xl font-bold text-champagne-500">{stat.number}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-champagne-700">{stat.number}</div>
                 <div className="text-charcoal-700 text-md sm:text-lg">{stat.label}</div>
               </div>
             ))}
@@ -125,7 +152,7 @@ const AboutPage = () => {
             {values.map((value, index) => (
               <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-6 sm:p-8">
-                  <div className="bg-champagne-500 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                  <div className=" bg-gradient-to-tl from-champagne-600 to-champagne-900 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                     <value.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-charcoal-900 mb-2 sm:mb-4">{value.title}</h3>
@@ -144,8 +171,8 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               { name: "Aziz Khan", title: "Founder & CEO", color: "bg-champagne-500", initials: "AK", desc: "Leading with vision and over a decade of experience in textile and interiors." },
-              { name: "Muhammad Tariq", title: "Head of Design", color: "bg-charcoal-800", initials: "MT", desc: "Crafts spaces that reflect your personality with design precision." },
-              { name: "Sohail Ahmed", title: "Installation Manager", color: "bg-sage-600", initials: "SA", desc: "Turns your concept into reality with expert installation delivery." }
+              { name: "Abdul Razaq", title: "Managing Director", color: "bg-charcoal-800", initials: "MT", desc: "Crafts spaces that reflect your personality with design precision." },
+              { name: "Abdul Qayyum", title: "Installation Manager", color: "bg-sage-600", initials: "SA", desc: "Turns your concept into reality with expert installation delivery." }
             ].map((member, i) => (
               <Card key={i} className="text-center border-0 shadow-lg">
                 <CardContent className="p-6 sm:p-8">
@@ -172,18 +199,18 @@ const AboutPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-          href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+          href="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
           target="_blank"
           rel="noopener noreferrer"
         className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
               Book <u><b>Free</b></u> Home Visit
         </a>
             <a
-          href="https://wa.me/971501234567?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+          href="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
           target="_blank"
           rel="noopener noreferrer"
         className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
-              <u><b>+92-3083180744</b></u>
+              <u><b>+971-503635428</b></u>
             </a>
           </div>
         </div>

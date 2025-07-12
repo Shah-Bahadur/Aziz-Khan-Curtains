@@ -103,7 +103,7 @@ const Hero = () => {
                         </div>
                         <div className="text-center">
                           <Award className="w-10 h-10 text-champagne-600 mx-auto mb-3" />
-                          <div className="text-sm text-white uppercase tracking-wide">15+ Years</div>
+                          <div className="text-sm text-white uppercase tracking-wide">26+ Years</div>
                           <div className="font-bold text-white">Experience</div>
                         </div>
                       </div>
