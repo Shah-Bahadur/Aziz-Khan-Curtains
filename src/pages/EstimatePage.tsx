@@ -675,9 +675,9 @@ const servicesWithProjects = [
     description:
       'Premium bed linens and custom-made fabrics to elevate your home comfort.',
     images: [
-      '/bsp2.jpg',
-      '/bsp13.png',
-      '/bsp16.jpg',
+      '/bedsheet.webp',
+      '/bedsheet1.webp',
+      '/bedsheet2.webp',
     ],
   },
 ];
@@ -747,7 +747,7 @@ const OurWork: React.FC = () => {
       <img
         src={img}
         alt={`${service.name} Project ${i + 1}`}
-        className="w-64 h-full object-fill rounded-xl"
+        className="w-64 h-full object-cover rounded-xl"
       />
     </div>
   ))}
