@@ -80,7 +80,7 @@ const Tcs3 = ({
               Book <u><b>Free</b></u> Home Visit
         </a>
         <p className='text-center text-gray-600 py-5 px-4 max-w-md'>
-        Our experts visit with samples and guide you in choosing custom window coverings for free</p>
+        Our experts visit with samples and guide you in choosing the best option for free</p>
       </div>
     </section>
   );
