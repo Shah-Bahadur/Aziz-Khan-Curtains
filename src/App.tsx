@@ -24,12 +24,18 @@ const App = () => {
   useEffect (() => {
 
     TagManager.initialize({gtmId : "GTM-T5237WGP"});
-    const timeout = setTimeout(() => {
-      setLoading(false);
+    const handlePageLoad = () => {
+      setTimeout(() => {
+        setLoading(false); // Remove loader after small delay to allow animation
+      }, 500); // optional delay
+    };
 
-    }, 2500);
-
-    return () => clearTimeout(timeout);
+    if (document.readyState === "complete") {
+      handlePageLoad(); // Page already loaded
+    } else {
+      window.addEventListener("load", handlePageLoad); // Wait until all resources are loaded
+      return () => window.removeEventListener("load", handlePageLoad);
+    }
   }, []);
 
   if (loading) {
