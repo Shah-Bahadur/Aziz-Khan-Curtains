@@ -742,7 +742,7 @@ const OurWork: React.FC = () => {
           {service.images.map((img, i) => (
             <div
               key={i}
-              className="min-w-full sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+              className="min-w-auto sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
             >
               <img
                 src={img}
