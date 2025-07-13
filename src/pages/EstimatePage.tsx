@@ -742,7 +742,7 @@ const OurWork: React.FC = () => {
           {service.images.map((img, i) => (
             <div
               key={i}
-              className="min-w-auto sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+              className="min-w-[280px] sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
             >
               <img
                 src={img}
@@ -752,6 +752,7 @@ const OurWork: React.FC = () => {
             </div>
           ))}
         </div>
+
           <div className="mt-6 flex justify-center">
       <a
         href="https://wa.me/+971503635428" // Replace with your actual WhatsApp number
