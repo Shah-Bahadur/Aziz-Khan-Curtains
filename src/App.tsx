@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 
 
 import { Toaster } from "@/components/ui/toaster";
@@ -23,7 +23,7 @@ const App = () => {
   const [loading, setLoading] = React.useState(true);
   useEffect (() => {
 
-    TagManager.initialize({gtmId : "GTM-T5237WGP"});
+    // TagManager.initialize({gtmId : "GTM-T5237WGP"});
     const timeout = setTimeout(() => {
       setLoading(false);
 
