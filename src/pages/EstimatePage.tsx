@@ -742,12 +742,12 @@ const OurWork: React.FC = () => {
   {service.images.map((img, i) => (
     <div
       key={i}
-      className="flex-shrink-0 sm:flex-shrink bg-white rounded-xl overflow-hidden shadow transition w-[64vw] sm:w-auto h-[250px] scroll-snap-align-start"
+      className="flex-shrink-0 sm:flex-shrink bg-white rounded-xl overflow-hidden shadow transition w-[64vw] sm:w-full h-[250px] scroll-snap-align-start"
     >
       <img
         src={img}
         alt={`${service.name} Project ${i + 1}`}
-        className="w-64 h-full object-cover rounded-xl"
+        className="w-64 sm:w-full h-full object-cover rounded-xl"
       />
     </div>
   ))}
