@@ -747,7 +747,7 @@ const OurWork: React.FC = () => {
               <img
                 src={img}
                 alt={`${service.name} Project ${i + 1}`}
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-fill"
               />
             </div>
           ))}
