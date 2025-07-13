@@ -738,20 +738,20 @@ const OurWork: React.FC = () => {
             {service.description}
           </p>
           {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
-         <div className="overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 flex space-x-4 pb-4">
-          {service.images.map((img, i) => (
-            <div
-              key={i}
-              className="min-w-[280px] sm:min-w-0 sm:w-auto flex-shrink-0 sm:flex-shrink rounded-xl overflow-hidden shadow hover:shadow-lg transition"
-            >
-              <img
-                src={img}
-                alt={`${service.name} Project ${i + 1}`}
-                className="w-full h-64 object-fill"
-              />
-            </div>
-          ))}
-        </div>
+         <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-4 scroll-snap-x mandatory pb-4">
+  {service.images.map((img, i) => (
+    <div
+      key={i}
+      className="flex-shrink-0 sm:flex-shrink bg-white rounded-xl overflow-hidden shadow transition w-[64vw] sm:w-auto h-[250px] scroll-snap-align-start"
+    >
+      <img
+        src={img}
+        alt={`${service.name} Project ${i + 1}`}
+        className="w-64 h-full object-fill rounded-xl"
+      />
+    </div>
+  ))}
+</div>
 
           <div className="mt-6 flex justify-center">
       <a
