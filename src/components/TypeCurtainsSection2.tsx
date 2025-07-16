@@ -17,9 +17,9 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
 
   
   section3Text = "From Measuring to Mounting – We handle everything. Choose from a wide variety of colors, fabrics, and styles that match your interior theme.",
-  section3LeftImage = "/sm.png",
-  section3CenterImage = "/home3.png",
-  section3RightImage = "/curtainssec2.png",
+  section3LeftImage = "/home7.webp",
+  section3CenterImage = "/home3.webp",
+  section3RightImage = "/home8.webp",
 }) => {
   return (
     <section className="bg-white flex flex-col gap-12">

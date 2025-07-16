@@ -639,12 +639,12 @@ const servicesWithProjects = [
     description:
       'Bespoke curtains tailored to your style — from fabric selection to final installation.',
     images: [
-      '/hw1.jpg',
-      '/hw2.jpg',
-      '/hw3.jpg',
-      '/hw4.jpg',
-      '/hw5.jpg',
-      '/hw6.jpg',
+      '/hw1.webp',
+      '/hw2.webp',
+      '/hw3.webp',
+      '/hw4.webp',
+      '/hw5.webp',
+      '/hw6.webp',
     ],
   },
   {
@@ -652,12 +652,12 @@ const servicesWithProjects = [
     description:
       'Give your furniture a second life with high-quality, custom sofa upholstery and renovation.',
     images: [
-      'sw1.jpg',
-      '/sw2.jpg',
-      '/sw3.jpg',
-      '/sw4.jpg',
-      '/sw5.jpg',
-      '/sw6.jpg',
+      'sw1.webp',
+      '/sw2.webp',
+      '/sw3.webp',
+      '/sw4.webp',
+      '/sw5.webp',
+      '/sw6.webp',
     ],
   },
   {
@@ -665,9 +665,9 @@ const servicesWithProjects = [
     description:
       'Modern and motorized blinds — ideal for light control, privacy, and elegance.',
     images: [
-      '/blindsw.jpg',
-      '/office2.png',
-      '/office4.png',
+      '/blindsw.webp',
+      '/office2.webp',
+      '/office4.webp',
     ],
   },
   {

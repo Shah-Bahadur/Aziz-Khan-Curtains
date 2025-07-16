@@ -27,7 +27,7 @@ const Header = () => {
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-sm leading-tight sm:text-xl font-semibold text-champagne-600">
+          <div className="text-sm leading-tight sm:text-xl font-semibold text-champagne-750">
             Aziz Khan Curtains
           </div>
 
@@ -72,7 +72,7 @@ const Header = () => {
             <StoreIcon className="w-5 h-5 mb-0.5" />
             About Us
           </Link>
-          <Link to="https://wa.me/923083180744?text=Hi..." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
+          <Link to="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
           <Phone className="w-5 h-5 mb-0.5" />
           WhatsApp Us
         </Link>

@@ -30,7 +30,7 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
   testimonial = "We installed Aziz Khan's blackout curtains in our villa — the heat is down, the rooms feel luxurious, and my kids sleep better!",
   author = "Salim A. Naser",
   imageUrl = "/home.webp",
-  authorImageUrl = "/reviewer.png",
+  authorImageUrl = "/reviewer.webp",
   
 }) => {
   return (
@@ -43,7 +43,7 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
             {titleLine1}
           </h1>
           <h1 className="text-5xl font-bold bg-gradient-to-bl from-champagne-600 to-slate-600 bg-clip-text text-transparent">{titleLine2}</h1>
-          <h2 className="text-xl text-champagne-600 font-sans font-regular mt-5 mb-5">{subtitle} <b>{curtainsType}</b></h2>
+          <h2 className="text-xl text-champagne-750 font-sans font-regular mt-5 mb-5">{subtitle} <b>{curtainsType}</b></h2>
           <p className="text-md text-gray-600 font-sans leading-tight mt-5 ">{description}</p>
         </div>
 

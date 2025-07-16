@@ -16,7 +16,7 @@ const Process = () => {
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-gradient-to-r rounded-xl flex items-center justify-center">
                 <img
-                  src="/calender1.webp"
+                  src="/process3.webp"
                   alt="Calendar"
                   className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
                 />
@@ -34,7 +34,7 @@ const Process = () => {
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-gradient-to-r  rounded-xl flex items-center justify-center">
                 <img
-                  src="/homevisit1.png"
+                  src="/process2.webp"
                   alt="Home Visit"
                   className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
                 />
@@ -51,7 +51,7 @@ const Process = () => {
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full bg-gradient-to-r  rounded-xl flex items-center justify-center">
                 <img
-                  src="/aq1.png"
+                  src="/process1.webp"
                   alt="Approve Quote"
                   className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
                 />
@@ -68,7 +68,7 @@ const Process = () => {
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
               <div className="w-full h-full  rounded-xl flex items-center justify-center">
                 <img
-                  src="/install1.png"
+                  src="/process4.webp"
                   alt="Install Curtains"
                   className="w-30 h-30 sm:w-24 sm:h-24 lg:w-48 lg:h-48 object-contain mx-auto"
                 />

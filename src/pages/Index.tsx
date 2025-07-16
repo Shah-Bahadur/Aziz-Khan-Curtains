@@ -10,7 +10,6 @@ import TypeCurtainsSection1 from "@/components/TypeCurtainsSection1";
 import TypeCurtainsSection2 from "@/components/TypeCurtainsSection2";
 import Tcs3 from "@/components/Tcs3";
 import Footer from "@/components/Footer";
-import FloatingButton from "@/components/FloatingButton";
 
 
 
@@ -34,7 +33,7 @@ const Index = () => {
         imageUrl="/office.webp"
         testimonial="As a manager, I needed blinds that looked sleek and worked well. Aziz Khan’s team gave our office a polished, energy-efficient upgrade."
         author="Hina Yousuf"
-        authorImageUrl="/reviewer2.png"
+        authorImageUrl="/reviewer2.webp"
         description={
           <>
             Designed for Dubai offices. Built for focus and professionalism.
@@ -47,21 +46,21 @@ const Index = () => {
         section2titlesub2 = "Design That Reflects Your Vision."
 
         section2Text = "Dubai offices battle strong sunlight, screen glare, and distractions. Our office blinds and curtains — like vertical blinds, roller blinds, and blackout shades — are made for productivity and style."
-        section2MainImage = "/office1.png"
-        section2DecorImage = "/office2.png"
+        section2MainImage = "/office1.webp"
+        section2DecorImage = "/office2.webp"
         />
         <TypeCurtainsSection2
         section3Text = "Custom Fit & Corporate Finish – From boardrooms to startups, we offer modern, easy-to-maintain materials in neutral and premium tones."
-        section3LeftImage = "/office5.png"
-        section3CenterImage = "/office3.png"
-        section3RightImage = "/office4.png"
+        section3LeftImage = "/office5.webp"
+        section3CenterImage = "/office3.webp"
+        section3RightImage = "/office4.webp"
         />
         <Tcs3
         headingLines = "Redefine Your "
         focusWord = " Workspace"
         headingLines2 = "Aziz Khan Office Curtains"
         paragraphText = "Blinds or blackout — made to match your team’s focus - Free Fabric Preview at Your Location."
-        images ={['/office6.png', '/office7.png', '/office8.png']}
+        images ={['/office6.webp', '/office7.webp', '/office8.webp']}
   
         />
       
@@ -73,7 +72,7 @@ const Index = () => {
         imageUrl="/sofa.webp"
         testimonial="They didn’t just fix my sofa — Aziz's Team redefined my living room. Professional team, premium finish, and worth every dirham."
         author="Hina Yousuf"
-        authorImageUrl="/reviewer2.png"
+        authorImageUrl="/reviewer2.webp"
         description={
           <>
             Each option is crafted to resonate with customers looking for custom sofa making and renovation — 
@@ -87,20 +86,20 @@ const Index = () => {
 
         section2Text = "Old frame, new soul. We restore damaged or dated sofas with structural repair, fresh fabric, and upgraded cushioning — making it look and feel brand new."
         section2MainImage = "/sofa1.webp"
-        section2DecorImage = "/sofa2.png"
+        section2DecorImage = "/sofa2.webp"
         />
         <TypeCurtainsSection2
         section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
-        section3LeftImage = "/sofa3.png"
-        section3CenterImage = "/sofa4.png"
-        section3RightImage = "/sofa5.png"
+        section3LeftImage = "/sofa3.webp"
+        section3CenterImage = "/sofa4.webp"
+        section3RightImage = "/sofa5.webp"
         />
         <Tcs3
         headingLines = "Where Style Meets "
         focusWord = " Comfort."
         headingLines2 = "Aziz Khan Custom Sofas"
         paragraphText = "Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
-        images ={['/sofa6.png', '/sofa7.png', '/sofa8.png']}
+        images ={['/sofa6.webp', '/sofa7.webp', '/sofa8.webp']}
   
         />
 

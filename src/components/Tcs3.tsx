@@ -18,7 +18,7 @@ const Tcs3 = ({
   focusWord = "Serinity",
   headingLines2 = "Aziz Khan Home Curtains",
   paragraphText = "Add softness, privacy, and temperature control to every room — all in one go Book Free Home Visit — Get Sample Fabrics & Design Advice at Home.",
-  images =['/home4.png', '/home5.png', '/home6.png'],
+  images =['/home4.webp', '/home5.webp', '/home6.webp'],
   
 }: Tcs3) => {
 
