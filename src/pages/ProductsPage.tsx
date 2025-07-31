@@ -212,7 +212,7 @@ const ProductsPage = () => {
           focusWord="Home"
           headingLines2="Aziz Khan Home Curtains"
           paragraphText="Custom curtains for every room — we bring fabric samples to your home, take measurements, and plan the design with you."
-          images={['/home1.png', '/home2.png', '/home3.png']}
+          images={['/home1.webp', '/home2.webp', '/home3.webp']}
         />
       
         </>
@@ -230,7 +230,7 @@ const ProductsPage = () => {
           focusWord="Workspace"
           headingLines2="Aziz Khan Office Curtains"
           paragraphText="Blinds or blackout — made to match your team’s focus - Free Fabric Preview at Your Location."
-          images={['/office6.png', '/office7.png', '/office8.png']}
+          images={['/office6.webp', '/office7.webp', '/office8.webp']}
         />
         </>
       )}
@@ -247,7 +247,7 @@ const ProductsPage = () => {
           focusWord="Comfort."
           headingLines2="Aziz Khan Custom Sofas"
           paragraphText="Free Fabric Preview at Home. We bring materials, take measurements, and plan the design — all at your doorstep."
-          images={['/sofa6.png', '/sofa7.png', '/sofa8.png']}
+          images={['/sofa6.webp', '/sofa7.webp', '/sofa8.webp']}
         />
         </>
       )}

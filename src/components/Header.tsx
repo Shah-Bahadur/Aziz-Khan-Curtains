@@ -1,6 +1,6 @@
 
 import { Profiler, useEffect, useState } from "react";
-import { Home, ShoppingBag, Settings, Phone, BedIcon, DiscIcon, FileIcon, SkullIcon, StoreIcon } from "lucide-react";
+import { Home, ShoppingBag, Settings, Phone, BedIcon, DiscIcon, FileIcon, SkullIcon, Info, PenIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -27,7 +27,7 @@ const Header = () => {
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-sm leading-tight sm:text-xl font-semibold text-champagne-750">
+          <div className="text-sm leading-tight text-champagne-600 sm:text-xl font-semibold text-champagne-750">
             Aziz Khan Curtains
           </div>
 
@@ -37,6 +37,7 @@ const Header = () => {
             <Link to="/products" className="text-gray-700 hover:text-champagne-600">Products</Link>
             <Link to="/our_work" className="text-gray-700 hover:text-champagne-600">Our Work</Link>
             <Link to="/about" className="text-gray-700 hover:text-champagne-600">About Us</Link>
+            <Link to="/blog" className="text-gray-700 hover:text-champagne-600">Blogs</Link>
           </nav>
 
           {/* CTA Button */}
@@ -69,8 +70,12 @@ const Header = () => {
             Our Work
           </Link>
           <Link to="/about" className="flex flex-col items-center hover:text-champagne-600 transition">
-            <StoreIcon className="w-5 h-5 mb-0.5" />
+            <Info className="w-5 h-5 mb-0.5" />
             About Us
+          </Link>
+          <Link to="/blog" className="flex flex-col items-center hover:text-champagne-600 transition">
+            <PenIcon className="w-5 h-5 mb-0.5" />
+            Blogs
           </Link>
           <Link to="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
           <Phone className="w-5 h-5 mb-0.5" />

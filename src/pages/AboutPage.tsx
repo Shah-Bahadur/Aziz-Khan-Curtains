@@ -69,7 +69,7 @@ const AboutPage = () => {
           </div>
           <div className="relative mx-auto w-full max-w-xs sm:ml-60 sm:max-w-sm mt-12 md:max-w-md lg:w-[400px] lg:h-[500px]">
             <img
-              src="/home6.png"
+              src="/home6.webp"
               alt="Aziz Khan Curtains in Action"
               className="rounded-xl shadow-2xl w-full h-auto"
             />

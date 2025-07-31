@@ -15,6 +15,8 @@ import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LazyLoader from "./components/LazyLoader";
+import Blog from "./pages/Blog";
+import Post from "./pages/Post";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +52,8 @@ const App = () => {
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/our_work" element={<EstimatePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<Post />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
