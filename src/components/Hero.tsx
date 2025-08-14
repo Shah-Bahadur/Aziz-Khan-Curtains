@@ -6,6 +6,15 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 
 const Hero = () => {
   const [api, setApi] = useState<any>();
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const carouselSlides = [
     {
@@ -14,6 +23,7 @@ const Hero = () => {
       description:
         "Professional installation, premium quality fabrics, and lightning-fast delivery. Experience the difference with Aziz Khan Curtains.",
       image: "/home.webp",
+      mobileImage: "/home-mobile.png",
     },
     {
       title: "Design a Productive Space with",
@@ -21,6 +31,7 @@ const Hero = () => {
       description:
         "From boardrooms to coworking spaces — we provide vertical blinds, roller shades, and custom curtains to reduce glare and boost focus.",
       image: "/office.webp",
+      mobileImage: "/mobil-office.png",
     },
     {
       title: "Comfort Meets Craftsmanship in",
@@ -28,6 +39,7 @@ const Hero = () => {
       description:
         "From full sofa builds to professional renovation and upholstery — we craft seating that suits your style and space perfectly.",
       image: "/sofa1.webp",
+      mobileImage: "/mobile-sofa.png",
     },
     {
       title: "Softness that redefines sleep with",
@@ -35,6 +47,7 @@ const Hero = () => {
       description:
         "Made-to-fit bed linens in luxurious fabrics and elegant designs. Say goodbye to wrinkled sheets and hello to restful nights.",
       image: "/bedsheet7.webp",
+      mobileImage: "/mobile-bedsheet7.png",
     },
   ];
 
@@ -53,8 +66,13 @@ const Hero = () => {
           {carouselSlides.map((slide, index) => (
             <CarouselItem key={index}>
               <div
-                className="relative bg-cover bg-center bg-no-repeat py-16 sm:py-20"
-                style={{ backgroundImage: `url('${slide.image}')` }}
+                className="relative bg-cover bg-center bg-no-repeat py-16 sm:py-20 "
+                // style={{ backgroundImage: `url('${slide.image}' )` }}
+                style={{
+                  backgroundImage: `url('${
+                    isMobile && slide.mobileImage ? slide.mobileImage : slide.image
+                  }')`,
+                }}
               >
                 {/* Black Overlay */}
                 <div className="absolute inset-0 bg-black/40 z-0" />

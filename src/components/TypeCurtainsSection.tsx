@@ -57,6 +57,7 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
               width={400}
               height={250}
               className="object-cover w-full h-full"
+              loading="lazy"
             />
           </div>
 

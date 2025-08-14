@@ -46,6 +46,7 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
               src={section3LeftImage}
               alt="Interior Pic"
               className="w-80 rounded-md shadow-2xl object-cover"
+              loading="lazy"
             />
     
           </div>
@@ -55,6 +56,7 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
             src={section3CenterImage}
             alt="Decor Showcase"
             className="w-auto h-auto object-fill shadow-2xl"
+            loading="lazy"
           />
         </div>
 
@@ -64,6 +66,7 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
               src={section3RightImage}
               alt="Interior Pic"
               className="w-80 h-auto rounded-md shadow-2xl object-cover"
+              loading="lazy"
             />
     
           </div>
