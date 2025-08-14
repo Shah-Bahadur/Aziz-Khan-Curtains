@@ -28,7 +28,8 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-sm leading-tight text-champagne-600 sm:text-xl font-semibold text-champagne-750">
-            Aziz Khan Curtains
+            <img src="/logo.png" alt="Aziz Khan Curtains Logo" className="h-6 sm:h-8 w-auto" />
+            {/* <span>Aziz Khan Curtains</span> */}
           </div>
 
           {/* Desktop Navigation */}

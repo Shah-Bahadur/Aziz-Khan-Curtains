@@ -61,10 +61,10 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center gap-6 text-xl text-luxury-300">
-          <a href="#" className="hover:text-white" aria-label="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61579101253022" className="hover:text-white" aria-label="Facebook">
             <FaFacebookF />
           </a>
-          <a href="#" className="hover:text-white" aria-label="Instagram">
+          <a href="https://www.instagram.com/akc_dubai/" className="hover:text-white" aria-label="Instagram">
             <FaInstagram />
           </a>
           <a href="#" className="hover:text-white" aria-label="YouTube">
