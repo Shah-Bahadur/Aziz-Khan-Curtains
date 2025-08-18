@@ -42,12 +42,12 @@
             <div className="absolute bottom-0 left-0 w-full h-20 sm:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-2 sm:px-4 py-12 sm:py-16 flex items-center justify-center min-h-[50vh] sm:min-h-[60vh]">
+            <div className="relative z-10 container mx-auto px-12 sm:px-4 py-12 sm:py-16 flex items-center justify-center min-h-[50vh] sm:min-h-[60vh]">
             <div className="w-full max-w-2xl mx-auto text-center space-y-8">
                 <div className="space-y-6">
                 {/* Curtain Opening Animation */}
                 <div className="curtain-animate inline-block">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight px-5 pt-12 sm:pt-12 text-white">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight px-5 pt-28 sm:pt-12 text-white">
                     {title}
                     <span className="block bg-gradient-to-br from-champagne-100 to-champagne-700 bg-clip-text text-transparent">
                         {highlight}
