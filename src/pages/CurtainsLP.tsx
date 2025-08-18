@@ -106,8 +106,9 @@ const CurtainsLP = () => {
       <TypeCurtainsSection1 />
       <TypeCurtainsSection2 />
       <Tcs3/>
-      
+      <div id = "office_curtains">
       <TypeCurtainsSection
+        
         titleLine1="Smarter Spaces,"
         titleLine2="Better Work."
         subtitle = "Aziz's"
@@ -145,6 +146,7 @@ const CurtainsLP = () => {
         images ={['/office6.webp', '/office7.webp', '/office8.webp']}
   
         />
+        </div>
         </div>
         <div>
       {/* ...other sections... */}
