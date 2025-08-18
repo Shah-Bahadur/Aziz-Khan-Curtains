@@ -28,21 +28,21 @@
 
     return (
         <section id="service-hero" className="relative">
-        {/* <div
+        <div
             className="relative bg-cover bg-center bg-no-repeat sm:py-20"
             style={{
             backgroundImage: `url('${
                 isMobile && mobileImage ? mobileImage : image
             }')`,
             }}
-        > */}
-        <div className="relative bg-cover bg-center bg-no-repeat sm:py-20">
+        >
+        {/* <div className="relative bg-cover bg-center bg-no-repeat sm:py-20">
         <img
             src={isMobile && mobileImage ? mobileImage : image}
             alt="Hero background"
             className="absolute inset-0 w-full h-full object-cover -z-10"
             fetchPriority="high"
-        />
+        /> */}
         
             {/* Black Overlay */}
             <div className="absolute inset-0 bg-black/50 z-1" />
