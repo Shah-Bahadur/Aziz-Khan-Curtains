@@ -36,7 +36,7 @@
             }')`,
             }}
         > */}
-        <div className="relative sm:py-20">
+        <div className="relative bg-cover bg-center bg-no-repeat sm:py-20">
         <img
             src={isMobile && mobileImage ? mobileImage : image}
             alt="Hero background"
