@@ -96,7 +96,7 @@ const CurtainsLP = () => {
                 title="Curtains for You" 
                 highlight="Elegant and Affordable" 
                 description="Discover our wide range of curtains to match your home decor." 
-                image="/mobile-image.jpg" 
+                image="/mobile-image.webp" 
                 mobileImage="/mobile-image-c.webp"
             />
             {/* Process Section */}
