@@ -671,7 +671,7 @@ const servicesWithProjects = [
     ],
   },
   {
-    name: 'Bed Sheets & Fabrics',
+    name: 'Bed Sheets',
     description:
       'Premium bed linens and custom-made fabrics to elevate your home comfort.',
     images: [

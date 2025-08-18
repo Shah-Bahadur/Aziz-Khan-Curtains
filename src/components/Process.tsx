@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Process = () => {
+  useEffect(() => {
+  AOS.init({ once: false, mirror: true, duration: 800 });
+}, []);
   return (
-    <section className="py-20 bg-white">
+    <section data-aos = "flip-up" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -10,7 +18,7 @@ const Process = () => {
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 lg:gap-4">
+        <div  className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-6 lg:gap-4 ">
           {/* Step 1 */}
           <div className="text-center group">
             <div className="bg-champagne-50 rounded-2xl p-6 mb-4 h-54 flex items-center justify-center relative overflow-hidden">
@@ -42,7 +50,7 @@ const Process = () => {
             </div>
             <h3 className="text-base sm:text-xl font-semibold text-gray-600 mb-2 leading-tight">
               Home Visit of<br />
-              AZC Experts
+              AKC Experts
             </h3>
           </div>
 

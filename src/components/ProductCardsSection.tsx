@@ -25,13 +25,18 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
   products,
 }) => {
   return (
-    <section className="px-6 py-12 max-w-7xl mx-auto">
+    <section className="px-8 py-12 max-w-7xl mx-auto">
       <h2 className="text-3xl sm:text-3xl font-semibold text-center sm:text-left bg-gradient-to-br from-champagne-700 to-champagne-900 bg-clip-text text-transparent mb-10">
         {sectionTitle}
         <hr />
       </h2>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"> */}
+      <div className="
+    flex gap-6 overflow-x-auto snap-x snap-mandatory
+    md:grid md:grid-cols-3 lg:grid-cols-3 md:overflow-visible
+    scrollbar-hide
+  ">
         {products.map((product, index) => {
           const hasVariants = product.colorVariants && product.colorVariants.length > 0;
 
@@ -52,12 +57,12 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
           return (
             <div
               key={index}
-              className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+              className="flex-shrink-0 w-72 snap-start md:w-96 md:flex-shrink bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
             >
               <img
                 src={selectedImage}
                 alt={product.title}
-                className="w-auto h-72 object-cover transition duration-500"
+                className="w-96 h-80 object-cover transition duration-500"
               />
 
               <div className="flex flex-col flex-1 p-6">

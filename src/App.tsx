@@ -10,15 +10,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ServicesPage from "./pages/ServicesPage";
 import ProductsPage from "./pages/ProductsPage";
-import EstimatePage from "./pages/EstimatePage";
+import Our_work from "./pages/Our_work";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LazyLoader from "./components/LazyLoader";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
+import CurtainsLP from "./pages/CurtainsLP";
+
 
 const queryClient = new QueryClient();
+
 
 
 const App = () => {
@@ -48,11 +51,13 @@ const App = () => {
           <Routes>
 
             <Route path="/" element={<Index />} />
-            <Route path="/services" element={<ServicesPage />} />
+            {/* <Route path="/services" element={<ServicesPage />} /> */}
             <Route path="/products" element={<ProductsPage />} />
-            <Route path="/our_work" element={<EstimatePage />} />
+            <Route path="/our_work" element={<Our_work />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/curtains_lp" element={<CurtainsLP />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="/blog/:slug" element={<Post />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
