@@ -43,6 +43,7 @@
             className="absolute inset-0 w-full h-full object-cover -z-10"
             fetchPriority="high"
         />
+
         {/* Your content here */}
         </div>
             {/* Black Overlay */}
@@ -102,7 +103,7 @@
                 </div>
             </div>
             </div>
-        </div>
+        {/* </div> */}
 
         {/* Animations */}
         <style>
