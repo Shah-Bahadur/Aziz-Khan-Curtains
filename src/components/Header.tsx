@@ -140,7 +140,7 @@ const Header = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="text-gray-700 hover:text-champagne-600">
-                  Services
+                  Products
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48 bg-white shadow-lg rounded-lg">
@@ -157,7 +157,7 @@ const Header = () => {
                     to="/products"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    See All Services
+                    See All Product/Services
                   </Link>
                 </DropdownMenuItem>
                 
@@ -219,10 +219,10 @@ const Header = () => {
               className="w-40 bg-white shadow-lg rounded-lg"
             >
               <DropdownMenuItem asChild>
-                <Link to="/curtains_lp">Curtains</Link>
+                <Link to="/curtains_lp">Curtains Services</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/products">See All Services</Link>
+                <Link to="/products">See All Products/Services</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
