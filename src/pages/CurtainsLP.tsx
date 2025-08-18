@@ -143,7 +143,7 @@ const CurtainsLP = () => {
         focusWord = " Workspace"
         headingLines2 = "Aziz Khan Office Curtains"
         paragraphText = "Blinds or blackout — made to match your team’s focus - Free Fabric Preview at Your Location."
-        images ={['/office6.webp', '/office7.webp', '/office8.webp']}
+        images ={['/office6.webp', '/office7-c.webp', '/office8-c.webp']}
   
         />
         </div>
