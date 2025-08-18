@@ -245,8 +245,85 @@ const Index = () => {
         images ={['/office6.webp', '/office7.webp', '/office8.webp']}
   
         />
+
+        <TypeCurtainsSection
+        titleLine1="More Than a Sofa..."
+        titleLine2="It’s Where Moments Are Made."
+        subtitle = "Aziz's"
+        curtainsType ="Customized Sofas"
+        imageUrl="/sofa.webp"
+        testimonial="They didn’t just fix my sofa — Aziz's Team redefined my living room. Professional team, premium finish, and worth every dirham."
+        author="Hina Yousuf"
+        authorImageUrl="/reviewer2.webp"
+        description={
+          <>
+            Each option is crafted to resonate with customers looking for custom sofa making and renovation — 
+            Refresh your existing sofa with a new skin. Choose from a curated collection of fabrics.
+          </>}
+          />
+        <TypeCurtainsSection1  
+        section2titlesub1 = "Sofa Crafting"
+        section2Title = "Bespoke"
+        section2titlesub2 = "Complete Sofa Renovation"
+
+        section2Text = "Old frame, new soul. We restore damaged or dated sofas with structural repair, fresh fabric, and upgraded cushioning — making it look and feel brand new."
+        section2MainImage = "/sofa1.webp"
+        section2DecorImage = "/sofa2.webp"
+        />
+        <TypeCurtainsSection2
+        section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        section3LeftImage = "/sofa3.webp"
+        section3CenterImage = "/sofa4.webp"
+        section3RightImage = "/sofa5.webp"
+        />
+        <Tcs3
+        headingLines = "Where Style Meets "
+        focusWord = " Comfort."
+        headingLines2 = "Aziz Khan Custom Sofas"
+        paragraphText = "Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        images ={['/sofa6.webp', '/sofa7.webp', '/sofa8.webp']}
+  
+        />
+
+        <TypeCurtainsSection
+        titleLine1="Make Every Night"
+        titleLine2=" Feel Special."
+        subtitle = "Aziz's"
+        curtainsType ="Premium Bed Sheets"
+        imageUrl="/bedsheet1.webp"
+        testimonial="These aren’t just bedsheets — they’re luxury in fabric form. I never thought a sheet could make such a difference in sleep quality. Highly recommend!"
+        author="Maria Iqbal — Business Bay, Dubai"
+        authorImageUrl={"/maria-iqbal.png"}
+        description={
+          <>
+            Soft to the touch. Styled to your space. Tailored for restful nights in Dubai - Choose from a curated collection of fabrics.
+          </>}
+          />
+        <TypeCurtainsSection1  
+        section2titlesub1 = "Matches"
+        section2Title = "Style That"
+        section2titlesub2 = "Your Home"
+
+        section2Text = "Modern, minimalist, floral, or bold — choose from handpicked patterns and palettes that complement your bedroom interior"
+        section2MainImage = "/bedsheet.webp"
+        section2DecorImage = "/bedsheet2.webp"
+        />
+        <TypeCurtainsSection2
+        section3Text = "Your furniture should reflect your lifestyle — not limit it. Aziz Khan brings you the freedom to customize every detail, from design to comfort. Free Fabric Preview at Home We bring materials, take measurements, and plan the design — all at your doorstep."
+        section3LeftImage = "/bedsheet5.webp"
+        section3CenterImage = "/bedsheet3.webp"
+        section3RightImage = "/bedsheet4.webp"
+        />
+        <Tcs3
+        headingLines = "Your Bed, "
+        focusWord = " Your Sanctuary."
+        headingLines2 = "Aziz Khan Bed Sheets"
+        paragraphText = "soft, elegant, and personalized to your comfort. We bring fabric samples to your home, take measurements, and help you style the bedroom you’ve always dreamed of."
+        images ={['/bedsheet6.webp', '/bedsheet7.webp', '/bedsheet8.webp']}
+  
+        /> 
       
-      <ServiceCards
+      {/* <ServiceCards
   heading="We are the Pioneers of Interiors"
   description="Discover our range of premium services for your home and office. Click to learn more about each offering."
   services={[
@@ -262,7 +339,7 @@ const Index = () => {
   ]}
   onSelect={(key) => console.log("Selected service key:", key)}
   selectedKey={"1"}
-/>
+/> */}
       </div>
       {/* <Products /> */}
       <Services />

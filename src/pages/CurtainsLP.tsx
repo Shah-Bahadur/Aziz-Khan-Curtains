@@ -10,8 +10,7 @@ import Services from "@/components/Services";
 import ProductCardsSection from "@/components/ProductCardsSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
-
+import ServiceCards from "@/components/ServiceCards";
 
 const homeCurtainProducts = [
   {
@@ -152,10 +151,29 @@ const CurtainsLP = () => {
       <RecentWork works={recentWorks} />
       {/* ...other sections... */}
     </div>
+    <div>
     <ProductCardsSection
       sectionTitle="Discover Your Perfect Curtains"
       products={homeCurtainProducts}
     />
+    </div>
+    <ServiceCards
+  heading="We are the Pioneers of Interiors"
+  description="Discover our range of premium services for your home and office. Click to learn more about each offering."
+  services={[
+    { id: 1, name: "Premium Curtain Design & Installation", 
+      description: "Upgrade your bedroom with our premium bed sheets, crafted from soft, breathable fabrics for ultimate comfort. Designed in elegant styles to match your home décor, these sheets bring hotel-like luxury to your everyday sleep", 
+      imageUrl: "/home1.webp" },
+    { id: 2, name: "Sofa Restoration & Upholstery  ", 
+      description: "Upgrade your bedroom with our premium bed sheets, crafted from soft, breathable fabrics for ultimate comfort. Designed in elegant styles to match your home décor, these sheets bring hotel-like luxury to your everyday sleep",
+      imageUrl: "/sofa.webp" },
+    { id: 3, name: "Elegant Bed Sheets for Every Mood & Vibe", 
+      description: "Upgrade your bedroom with our premium bed sheets, crafted from soft, breathable fabrics for ultimate comfort. Designed in elegant styles to match your home décor, these sheets bring hotel-like luxury to your everyday sleep", 
+      imageUrl: "/bedsheet1.webp" }
+  ]}
+  onSelect={(key) => console.log("Selected service key:", key)}
+  selectedKey={"1"}
+/>
     <Services/>
     <Contact />
     <Footer />
