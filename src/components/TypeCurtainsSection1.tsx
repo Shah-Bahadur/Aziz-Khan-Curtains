@@ -21,7 +21,7 @@ const TypeCurtainsSection1: React.FC<TypeCurtainsSection1> = ({
   section2titlesub2 = "It’s a Lifestyle Upgrade.",
   section2Text = "Dubai sun fades sofas, raises energy bills, and disturbs your rest. Our premium home curtains — including blackout curtains, sheer drapes, and thermal fabrics — offer both elegance and insulation.",
   section2MainImage = "/home1.webp",
-  section2DecorImage = "/home2.webp",
+  section2DecorImage = "/home2-c.webp",
   
  
 }) => {
