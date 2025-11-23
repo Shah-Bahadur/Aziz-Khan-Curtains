@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { CheckCircle2, Sparkles } from 'lucide-react';
 
 const LeadMagnetSection = () => {
+  useEffect(() => {
+    AOS.init({ once: false, mirror: true, duration: 800 });
+  }, []);
   const whatsappNumber = '+971503635428';
   const whatsappMessage = encodeURIComponent(
     `Hi! I'd like to schedule a FREE home consultation with fabric samples for my curtains project. 🎨`
@@ -8,7 +14,7 @@ const LeadMagnetSection = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="py-8 md:py-10 bg-gradient-to-r from-luxury-50 via-white to-luxury-100 relative overflow-hidden">
+    <section data-aos="fade-up" className="py-8 md:py-10 bg-gradient-to-r from-luxury-50 via-white to-luxury-100 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-champagne-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 -z-0"></div>
       <div className="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-sage-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 -z-0"></div>

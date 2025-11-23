@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface WorkItem {
   title: string;
@@ -17,9 +19,12 @@ const RecentWork: React.FC<RecentWorkCarouselProps> = ({
   heading = "Our Recent Work",
   description = "A glimpse of our latest projects and satisfied clients.",
 }) => {
+  useEffect(() => {
+    AOS.init({ once: false, mirror: true, duration: 800 });
+  }, []);
 
   return (
-    <section className="py-8 md:py-10 bg-white">
+    <section data-aos="fade-up" className="py-8 md:py-10 bg-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal-900 mb-2 md:mb-3 leading-tight">

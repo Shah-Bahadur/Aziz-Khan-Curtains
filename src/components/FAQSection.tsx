@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { ChevronDown, Shield, Clock, Zap } from 'lucide-react';
 
 const FAQSection = () => {
   const [open, setOpen] = useState<number | null>(0);
 
+  useEffect(() => {
+    AOS.init({ once: false, mirror: true, duration: 800 });
+  }, []);
+
   const faqs = [
-    {
-      q: "How much do curtains cost in Dubai?",
-      a: "Our pricing is transparent: Blackout Curtains start from AED 299/window, Motorized Curtains from AED 1,500/window, Premium Fabrics from AED 599/meter. We provide custom quotes based on your exact room dimensions, fabric choice, and design complexity. Most Dubai families spend AED 2,000-5,000 per room for complete installation with premium finishes.",
-      icon: "💰"
-    },
+    // {
+    //   q: "How much do curtains cost in Dubai?",
+    //   a: "Our pricing is transparent: Blackout Curtains start from AED 299/window, Motorized Curtains from AED 1,500/window, Premium Fabrics from AED 599/meter. We provide custom quotes based on your exact room dimensions, fabric choice, and design complexity. Most Dubai families spend AED 2,000-5,000 per room for complete installation with premium finishes.",
+    //   icon: "💰"
+    // },
     {
       q: "How long does the installation take?",
       a: "Our proven process: FREE Consultation (1 hour) → Design & Quote (same day) → Delivery & Installation (24-48 hours). We work around your schedule—morning, evening, or weekend appointments available. Installation typically takes 2-4 hours depending on room complexity. No delays, no hidden timelines.",
@@ -48,7 +54,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-8 md:py-10 bg-gradient-to-b from-white to-luxury-50">
+    <section data-aos="fade-up" className="py-8 md:py-10 bg-gradient-to-b from-white to-luxury-50">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal-900 mb-2 md:mb-3">
