@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global overflow prevention */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -93,11 +106,41 @@
 @layer base {
   * {
     @apply border-border;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Lato', 'Inter', sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', 'Inter', sans-serif;
+  }
+
+  /* Heading Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  /* Button Typography - Lato Regular */
+  button, [role="button"], .btn {
+    font-family: 'Lato', 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
   }
 }

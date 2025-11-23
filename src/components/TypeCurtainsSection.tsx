@@ -29,7 +29,7 @@ const TypeCurtainsSection: React.FC<TypeCurtainsSection> = ({
   ),
   testimonial = "We installed Aziz Khan's blackout curtains in our villa — the heat is down, the rooms feel luxurious, and my kids sleep better!",
   author = "Salim A. Naser",
-  imageUrl = "/home-c.webp",
+  imageUrl = "/home.webp",
   authorImageUrl = "/reviewer.webp",
   
 }) => {

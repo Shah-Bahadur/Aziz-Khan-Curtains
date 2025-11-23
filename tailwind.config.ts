@@ -166,6 +166,12 @@ export default {
       }
     },
     extend: {
+      fontFamily: {
+        'serif': ['Cormorant Garamond', 'serif'],
+        'sans': ['Lato', 'Inter', 'sans-serif'],
+        'display': ['Cormorant Garamond', 'serif'],
+        'body': ['Lato', 'Inter', 'sans-serif']
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

@@ -25,18 +25,16 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
   products,
 }) => {
   return (
-    <section className="px-8 py-12 max-w-7xl mx-auto">
-      <h2 className="text-3xl sm:text-3xl font-semibold text-center sm:text-left bg-gradient-to-br from-champagne-700 to-champagne-900 bg-clip-text text-transparent mb-10">
-        {sectionTitle}
-        <hr />
-      </h2>
+    <section className="py-8 md:py-10 bg-white">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal-900 mb-2 md:mb-3 leading-tight">
+            {sectionTitle}
+          </h2>
+        </div>
 
-      {/* <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"> */}
-      <div className="
-    flex gap-6 overflow-x-auto snap-x snap-mandatory
-    md:grid md:grid-cols-3 lg:grid-cols-3 md:overflow-visible
-    scrollbar-hide
-  ">
+        <div className="mb-8 md:mb-10">
+          <div className="flex overflow-x-auto gap-4 pb-4 scroll-smooth snap-x snap-mandatory">
         {products.map((product, index) => {
           const hasVariants = product.colorVariants && product.colorVariants.length > 0;
 
@@ -57,26 +55,26 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
           return (
             <div
               key={index}
-              className="flex-shrink-0 w-72 snap-start md:w-96 md:flex-shrink bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+              className="flex-shrink-0 w-full sm:w-96 bg-white border-2 border-champagne-200 rounded-lg md:rounded-xl p-4 md:p-5 hover:shadow-lg transition-all duration-300 hover:border-champagne-400 flex flex-col snap-center"
             >
               <img
                 src={selectedImage}
                 alt={product.title}
-                className="w-96 h-80 object-cover transition duration-500"
+                className="w-full h-64 md:h-72 object-cover rounded-lg mb-4 transition duration-500"
               />
 
-              <div className="flex flex-col flex-1 p-6">
+              <div className="flex flex-col flex-1 gap-3">
                 {/* Show swatches only if colorVariants exist */}
                 {hasVariants && (
-                  <div className="flex items-center gap-2 mb-4">
+                  <div className="flex items-center gap-2 mb-2">
                     {product.colorVariants!.map((variant, swatchIndex) => (
                       <button
                         key={swatchIndex}
                         onClick={() => handleColorClick(variant)}
-                        className={`w-6 h-6 rounded-full border-2 transition ${
+                        className={`w-5 h-5 rounded-full border-2 transition ${
                           activeColor === variant.colorCode
-                            ? 'border-gray-900 scale-110'
-                            : 'border-gray-300'
+                            ? 'border-charcoal-900 scale-110'
+                            : 'border-champagne-300'
                         }`}
                         style={{ backgroundColor: variant.colorCode }}
                         aria-label={variant.colorName}
@@ -85,10 +83,10 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
                   </div>
                 )}
 
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-base md:text-lg font-bold text-charcoal-900 mb-1 leading-snug">
                   {product.title}
                 </h3>
-                <p className="text-gray-700 text-sm flex-1 mb-4">
+                <p className="text-charcoal-700 text-xs md:text-sm flex-1 leading-relaxed font-medium">
                   {product.description}
                 </p>
 
@@ -97,7 +95,7 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
                     href={`https://wa.me/+971503635428?text=Hi, I'm interested in ${encodeURIComponent(product.title)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-auto inline-block text-center bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:shadow-lg text-gray-900 font-semibold px-5 py-2 rounded-lg text-sm transition"
+                    className="mt-auto inline-block text-center bg-gradient-to-r from-champagne-600 to-champagne-800 hover:from-champagne-700 hover:to-champagne-900 text-white font-bold px-4 md:px-6 py-2 md:py-3 rounded-lg text-xs md:text-sm transition-all shadow-lg hover:shadow-xl"
                   >
                     {product.cta}
                   </a>
@@ -106,6 +104,10 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
             </div>
           );
         })}
+          </div>
+          {/* Scroll Hint for Mobile */}
+          <p className="text-center text-xs text-sage-500 md:hidden mt-2">← Swipe to see more →</p>
+        </div>
       </div>
     </section>
   );

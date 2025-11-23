@@ -33,7 +33,7 @@ const TypeCurtainsSection2: React.FC<TypeCurtainsSection2> = ({
 
           {/* <h2 className="text-5xl font-bold bg-gradient-to-br from-champagne-500 to-champagne-900 bg-clip-text text-transparent">
           </h2> */}
-          <p className="text-center px-12 text-xl sm:text-left sm:text-sm text-gray-400 leading-relaxed">
+          <p className="text-center px-4 sm:px-0 sm:text-left text-base sm:text-sm text-gray-400 leading-relaxed">
             {section3Text}
           </p>
 
