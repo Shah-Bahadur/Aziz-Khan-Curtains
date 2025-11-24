@@ -57,7 +57,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <a href="tel:+971503635428" className="text-cyan-900 hover:underline">+971-503635428</a>
+                      <a href="tel:+971503634385" className="text-cyan-900 hover:underline">+971-503635428</a>
                     </div>
                   </div>
                   {/* Email */}
@@ -183,3 +183,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

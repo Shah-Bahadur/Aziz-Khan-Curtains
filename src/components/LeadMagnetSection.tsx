@@ -7,7 +7,7 @@ const LeadMagnetSection = () => {
   useEffect(() => {
     AOS.init({ once: false, mirror: true, duration: 800 });
   }, []);
-  const whatsappNumber = '+971503635428';
+  const whatsappNumber = '+971503634385';
   const whatsappMessage = encodeURIComponent(
     `Hi! I'd like to schedule a FREE home consultation with fabric samples for my curtains project. 🎨`
   );
@@ -90,3 +90,4 @@ const LeadMagnetSection = () => {
 };
 
 export default LeadMagnetSection;
+

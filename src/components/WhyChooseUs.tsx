@@ -136,7 +136,7 @@ const WhyChooseUs = () => {
             Ready to experience the difference?
           </p>
           <a
-            href="https://wa.me/+971503635428?text=I%20want%20to%20experience%20your%20premium%20curtain%20service%20with%20free%20consultation"
+            href="https://wa.me/+971503634385?text=I%20want%20to%20experience%20your%20premium%20curtain%20service%20with%20free%20consultation"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-champagne-600 to-champagne-800 hover:from-champagne-700 hover:to-champagne-900 text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded-lg md:rounded-xl text-sm md:text-lg transition-all shadow-lg hover:shadow-xl"
@@ -150,3 +150,4 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
+

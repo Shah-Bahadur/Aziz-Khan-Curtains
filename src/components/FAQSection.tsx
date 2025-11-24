@@ -98,7 +98,7 @@ const FAQSection = () => {
             Our team is ready to help. Get personalized recommendations now.
           </p>
           <a
-            href="https://wa.me/+971503635428?text=I%20have%20questions%20about%20curtains%20for%20my%20Dubai%20home"
+            href="https://wa.me/+971503634385?text=I%20have%20questions%20about%20curtains%20for%20my%20Dubai%20home"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-champagne-700 font-bold px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-lg hover:bg-luxury-50 transition-all"
@@ -112,3 +112,4 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
+

@@ -26,7 +26,7 @@ const ServiceCards = ({ services, onSelect, selectedKey, heading, description })
             <p className="text-gray-600 text-justify m-4">{service.description}</p>
             <div className="mt-auto w-full flex justify-center">
               <a
-                href={`https://wa.me/+971503635428?text=Hi, I'm interested Could you please Guide me regarding more about it.`}
+                href={`https://wa.me/+971503634385?text=Hi, I'm interested Could you please Guide me regarding more about it.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-center bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:shadow-lg text-gray-900 font-semibold px-5 py-2 rounded-lg text-sm transition w-full"

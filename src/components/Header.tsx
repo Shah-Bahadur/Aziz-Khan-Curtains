@@ -32,7 +32,7 @@
 
 //           {/* CTA Button */}
 //           <a
-//             href="https://wa.me/+971503635428?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
+//             href="https://wa.me/+971503634385?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
 //             target="_blank"
 //             rel="noopener noreferrer"
 //             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
@@ -67,7 +67,7 @@
 //             <PenIcon className="w-5 h-5 mb-0.5" />
 //             Blogs
 //           </Link>
-//           <Link to="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
+//           <Link to="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains." target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-green-600 transition">
 //           <Phone className="w-5 h-5 mb-0.5" />
 //           WhatsApp Us
 //         </Link>
@@ -177,7 +177,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/+971503635428?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
+            href="https://wa.me/+971503634385?text=Hi%20I%20am%20interested%20in%20Aziz%20Khan%20Curtains.%20Please%20guide%20me."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
@@ -249,7 +249,7 @@ const Header = () => {
             Blogs
           </Link>
           <Link
-            to="https://wa.me/+971503635428?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+            to="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center hover:text-green-600 transition"
@@ -264,3 +264,4 @@ const Header = () => {
 };
 
 export default Header;
+
