@@ -14,7 +14,7 @@ const SocialProof = () => {
       location: "Emirates Hills, Dubai",
       rating: 5,
       text: "Aziz Khan's team arrived within 24 hours of my call. The professionalism and speed were incredible. My living room now has the perfect blackout curtains—installation took just 3 hours with zero mess. Worth every dirham!",
-      image: "/reviewer1.webp",
+      image: "/ocp1.avif",
       projectType: "Luxury Villa Curtains",
       savings: "Saved 6 hours from other quotes"
     },
