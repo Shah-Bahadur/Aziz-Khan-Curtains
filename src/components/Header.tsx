@@ -118,7 +118,7 @@ const Header = () => {
         <div className="flex justify-around items-center py-2 text-xs font-medium text-gray-700">
           <Link
             to="/"
-            className="flex flex-col items-center hover:text-champagne-600 transition"
+            className={`flex flex-col items-center transition pb-1 ${isActive("/")}`}
           >
             <Home className="w-5 h-5 mb-0.5" />
             Home
@@ -129,7 +129,7 @@ const Header = () => {
             <DropdownMenuTrigger asChild>
               <button
                 onClick={handleMobileProductsClick}
-                className="flex flex-col items-center hover:text-champagne-600 transition"
+                className={`flex flex-col items-center transition font-medium ${location.pathname.includes("/products") || location.pathname.includes("/curtains_lp") ? "text-champagne-600 border-b-2 border-champagne-600" : "text-gray-700 hover:text-champagne-600"}`}
               >
                 <ShoppingBag className="w-5 h-5 mb-0.5" />
                 Products
@@ -151,32 +151,31 @@ const Header = () => {
 
           <Link
             to="/our_work"
-            className="flex flex-col items-center hover:text-champagne-600 transition"
+            className={`flex flex-col items-center transition pb-1 ${isActive("/our_work")}`}
           >
             <Settings className="w-5 h-5 mb-0.5" />
             Our Work
           </Link>
           <Link
             to="/about"
-            className="flex flex-col items-center hover:text-champagne-600 transition"
+            className={`flex flex-col items-center transition pb-1 ${isActive("/about")}`}
           >
             <Info className="w-5 h-5 mb-0.5" />
             About Us
           </Link>
           <Link
             to="/blog"
-            className="flex flex-col items-center hover:text-champagne-600 transition"
+            className={`flex flex-col items-center transition pb-1 ${isActive("/blog")}`}
           >
             <PenIcon className="w-5 h-5 mb-0.5" />
             Blogs
           </Link>
-          <a
-            href="/contact-redirect?method=whatsapp"
-            className="flex flex-col items-center hover:text-green-600 transition"
+          <ContactCTAButton
+            className="flex flex-col items-center transition text-champagne-600 hover:text-champagne-700"
           >
             <Phone className="w-5 h-5 mb-0.5" />
-            WhatsApp Us
-          </a>
+            Contact
+          </ContactCTAButton>
         </div>
       </nav>
     </>
