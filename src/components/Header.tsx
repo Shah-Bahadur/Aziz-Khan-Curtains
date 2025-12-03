@@ -38,16 +38,13 @@ const Header = () => {
 
   // Handle WhatsApp contact
   const handleWhatsApp = () => {
-    window.open(
-      `https://wa.me/${businessPhone}?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20custom%20design%20consultation%20with%20Aziz%20Khan%20Curtains.`,
-      "_blank"
-    );
+    window.location.href = "/contact-redirect?method=whatsapp";
     setShowContactDialog(false);
   };
 
   // Handle direct call
   const handleDirectCall = () => {
-    window.location.href = `tel:${businessPhone}`;
+    window.location.href = "/contact-redirect?method=call";
     setShowContactDialog(false);
   };
 

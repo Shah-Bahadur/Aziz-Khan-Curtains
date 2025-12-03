@@ -18,6 +18,7 @@ import LazyLoader from "./components/LazyLoader";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
 import CurtainsLP from "./pages/CurtainsLP";
+import ContactRedirect from "./pages/ContactRedirect";
 
 
 const queryClient = new QueryClient();
@@ -57,6 +58,7 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/curtains_lp" element={<CurtainsLP />} />
+            <Route path="/contact-redirect" element={<ContactRedirect />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="/blog/:slug" element={<Post />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
