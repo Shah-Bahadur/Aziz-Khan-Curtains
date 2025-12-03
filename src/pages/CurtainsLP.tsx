@@ -114,7 +114,7 @@ const CurtainsLP = () => {
         <TypeCurtainsSection />
         <TypeCurtainsSection1 />
         <TypeCurtainsSection2 />
-        <Tcs3 />
+        <Tcs3 />  
 
         {/* Office Curtains Section */}
         <div id="office_curtains">

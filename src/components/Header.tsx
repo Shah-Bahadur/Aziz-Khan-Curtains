@@ -7,6 +7,8 @@ import {
   Phone,
   Info,
   PenIcon,
+  MessageCircle,
+  PhoneCall,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -15,12 +17,39 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastClick, setLastClick] = useState<number | null>(null);
+  const [showContactDialog, setShowContactDialog] = useState(false);
   const navigate = useNavigate();
+
+  const businessPhone = "+971503634385";
+
+  // Handle WhatsApp contact
+  const handleWhatsApp = () => {
+    window.open(
+      `https://wa.me/${businessPhone}?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20custom%20design%20consultation%20with%20Aziz%20Khan%20Curtains.`,
+      "_blank"
+    );
+    setShowContactDialog(false);
+  };
+
+  // Handle direct call
+  const handleDirectCall = () => {
+    window.location.href = `tel:${businessPhone}`;
+    setShowContactDialog(false);
+  };
 
 
 
@@ -98,8 +127,8 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <a
-            href="tel:+971503634385"
+          <button
+            onClick={() => setShowContactDialog(true)}
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
           >
             Get Your{" "}
@@ -107,7 +136,7 @@ const Header = () => {
               <b>Custom Design</b>
             </u>{" "}
             Today
-          </a>
+          </button>
         </div>
       </header>
 
@@ -179,6 +208,46 @@ const Header = () => {
           </Link>
         </div>
       </nav>
+
+      {/* Contact Choice Dialog */}
+      <AlertDialog open={showContactDialog} onOpenChange={setShowContactDialog}>
+        <AlertDialogContent className="bg-white border border-gray-200 rounded-xl">
+          <AlertDialogHeader>
+            <AlertDialogTitle className="text-xl font-cormorant text-gray-900">
+              How would you like to connect?
+            </AlertDialogTitle>
+            <AlertDialogDescription className="text-center py-4">
+              <p className="text-2xl font-bold text-champagne-600 mb-2">+971-503-634-385</p>
+              <p className="text-sm text-gray-600">Choose your preferred contact method</p>
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <div className="flex flex-col gap-3 py-4">
+            <button
+              onClick={handleWhatsApp}
+              className="flex items-center justify-center gap-3 bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg px-4 py-3 transition text-left"
+            >
+              <MessageCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900">WhatsApp</p>
+                <p className="text-sm text-gray-600">Quick message & instant response</p>
+              </div>
+            </button>
+            <button
+              onClick={handleDirectCall}
+              className="flex items-center justify-center gap-3 bg-champagne-50 hover:bg-champagne-100 border border-champagne-200 rounded-lg px-4 py-3 transition text-left"
+            >
+              <PhoneCall className="w-5 h-5 text-champagne-600 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-gray-900">Direct Call</p>
+                <p className="text-sm text-gray-600">Speak with our design expert now</p>
+              </div>
+            </button>
+          </div>
+          <AlertDialogCancel className="bg-gray-100 hover:bg-gray-200 text-gray-900 border-0">
+            Cancel
+          </AlertDialogCancel>
+        </AlertDialogContent>
+      </AlertDialog>
     </>
   );
 };
