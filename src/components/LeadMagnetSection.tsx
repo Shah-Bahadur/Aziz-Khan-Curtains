@@ -2,16 +2,12 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CheckCircle2, Sparkles } from 'lucide-react';
+import ContactCTAButton from './ContactCTAButton';
 
 const LeadMagnetSection = () => {
   useEffect(() => {
     AOS.init({ once: false, mirror: true, duration: 800 });
   }, []);
-  const whatsappNumber = '+971503634385';
-  const whatsappMessage = encodeURIComponent(
-    `Hi! I'd like to schedule a FREE home consultation with fabric samples for my curtains project. 🎨`
-  );
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <section data-aos="fade-up" className="py-8 md:py-10 bg-gradient-to-r from-luxury-50 via-white to-luxury-100 relative overflow-hidden">
@@ -40,14 +36,11 @@ const LeadMagnetSection = () => {
 
         {/* Main CTA Button */}
         <div className="mb-4 md:mb-5">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ContactCTAButton
             className="inline-block bg-gradient-to-r from-champagne-600 to-champagne-800 hover:from-champagne-700 hover:to-champagne-900 text-white font-bold px-6 md:px-10 py-3 md:py-4 rounded-lg md:rounded-xl text-base md:text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105 transform duration-300"
           >
             Schedule FREE Consultation
-          </a>
+          </ContactCTAButton>
           <p className="text-xs md:text-sm text-sage-600 mt-2 md:mt-2 font-medium">
             Respond within 1 hour | No obligation
           </p>
