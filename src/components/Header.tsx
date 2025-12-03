@@ -22,16 +22,7 @@ const Header = () => {
   const [lastClick, setLastClick] = useState<number | null>(null);
   const navigate = useNavigate();
 
-  const businessPhone = "+971503634385";
 
-  // Handle direct call with user number collection
-  const handleDirectCall = () => {
-    const userPhone = prompt("Please enter your phone number to proceed with the call:", "");
-    if (userPhone && userPhone.trim()) {
-      // Make the call
-      window.location.href = `tel:${businessPhone}`;
-    }
-  };
 
   // ✅ Handle mobile Products click
   const handleMobileProductsClick = () => {
@@ -107,8 +98,10 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <button
-            onClick={handleDirectCall}
+          <Link
+            to="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
           >
             Call for{" "}
@@ -116,7 +109,7 @@ const Header = () => {
               <b>Free</b>
             </u>{" "}
             Consultation
-          </button>
+          </Link>
         </div>
       </header>
 
