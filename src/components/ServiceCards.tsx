@@ -1,4 +1,5 @@
 import React from "react";
+import ContactCTAButton from "./ContactCTAButton";
 
 const ServiceCards = ({ services, onSelect, selectedKey, heading, description }) => (
   <div className="flex flex-col items-center py-10 pl-4 pr-4 mr-4 ml-4">
@@ -25,15 +26,12 @@ const ServiceCards = ({ services, onSelect, selectedKey, heading, description })
             <h3 className="text-xl text-center font-bold text-champagne-700 mb-2">{service.name}</h3>
             <p className="text-gray-600 text-justify m-4">{service.description}</p>
             <div className="mt-auto w-full flex justify-center">
-              <a
-                href={`https://wa.me/+971503634385?text=Hi, I'm interested Could you please Guide me regarding more about it.`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <ContactCTAButton
                 className="inline-block text-center bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:shadow-lg text-gray-900 font-semibold px-5 py-2 rounded-lg text-sm transition w-full"
                 onClick={e => e.stopPropagation()}
               >
                 Call for free consultation
-              </a>
+              </ContactCTAButton>
             </div>
           </div>
           <div className="absolute inset-0 bg-gradient-to-br from-blue-100/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none" />

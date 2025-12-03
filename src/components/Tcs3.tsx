@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import ContactCTAButton from './ContactCTAButton';
 
 interface Tcs3 {
 
@@ -71,14 +72,11 @@ const Tcs3 = ({
       </div>
 
       <div className="flex flex-col items-center mt-16">
-        {/* <button */}
-        <a
-          href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
-          target="_blank"
-          rel="noopener noreferrer"
-        className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+        <ContactCTAButton
+          className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl"
+        >
               Book <u><b>Free</b></u> Home Visit
-        </a>
+        </ContactCTAButton>
         <p className='text-center text-gray-600 py-5 px-4 max-w-md'>
         Our experts visit with samples and guide you in choosing the best option for free</p>
       </div>

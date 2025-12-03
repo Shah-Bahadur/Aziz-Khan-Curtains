@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Star, Quote } from 'lucide-react';
+import ContactCTAButton from './ContactCTAButton';
 
 const SocialProof = () => {
   useEffect(() => {
@@ -143,14 +144,11 @@ const SocialProof = () => {
           <p className="text-sm md:text-base text-charcoal-700 mb-4 md:mb-5 max-w-2xl mx-auto font-medium leading-relaxed">
             Join our community of happy Dubai clients. Let us transform your space.
           </p>
-          <a
-            href="https://wa.me/+971503634385?text=I%20want%20to%20join%20your%20happy%20clients%20with%20a%20free%20consultation"
-            target="_blank"
-            rel="noopener noreferrer"
+          <ContactCTAButton
             className="inline-block bg-gradient-to-r from-champagne-600 to-champagne-800 hover:from-champagne-700 hover:to-champagne-900 text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded-lg md:rounded-xl text-sm md:text-lg transition-all shadow-lg hover:shadow-xl"
           >
             Schedule Consultation
-          </a>
+          </ContactCTAButton>
         </div>
       </div>
     </section>

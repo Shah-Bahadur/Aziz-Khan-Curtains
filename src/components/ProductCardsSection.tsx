@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ContactCTAButton from './ContactCTAButton';
 
 interface ColorVariant {
   colorName: string;
@@ -97,14 +98,11 @@ const ProductCardsSection: React.FC<ProductCardsSectionProps> = ({
                 </p>
 
                 {product.cta && (
-                  <a
-                    href={`https://wa.me/+971503634385?text=Hi, I'm interested in ${encodeURIComponent(product.title)}.`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <ContactCTAButton
                     className="mt-auto inline-block text-center bg-gradient-to-r from-champagne-600 to-champagne-800 hover:from-champagne-700 hover:to-champagne-900 text-white font-bold px-4 md:px-6 py-2 md:py-3 rounded-lg text-xs md:text-sm transition-all shadow-lg hover:shadow-xl"
                   >
                     {product.cta}
-                  </a>
+                  </ContactCTAButton>
                 )}
               </div>
             </div>

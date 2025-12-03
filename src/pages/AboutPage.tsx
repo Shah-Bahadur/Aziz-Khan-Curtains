@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Award, Users, Clock } from "lucide-react";
-
+import ContactCTAButton from "@/components/ContactCTAButton";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -54,14 +54,11 @@ const AboutPage = () => {
               Our mission is to bring warmth, elegance, and ease into every home we touch.
             </p>
             <div className="flex flex-col items-center sm:items-start mt-10">
-              <a
-                href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
-                target="_blank"
-                rel="noopener noreferrer"
+              <ContactCTAButton
                 className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-3 rounded-lg text-lg transition-all duration-300 shadow-xl"
               >
                 Book <u><b>Free</b></u> Home Visit
-              </a>
+              </ContactCTAButton>
               <p className="text-center sm:text-left text-gray-100 py-5 px-0 max-w-md">
                 Our experts visit with samples and guide you in choosing custom window coverings for free
               </p>
@@ -198,20 +195,16 @@ const AboutPage = () => {
             Let us visit your home, measure your space, and bring ideas to life — all at no cost.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-          href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
-          target="_blank"
-          rel="noopener noreferrer"
-        className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+            <ContactCTAButton
+          className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl"
+            >
               Book <u><b>Free</b></u> Home Visit
-        </a>
-            <a
-          href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
-          target="_blank"
-          rel="noopener noreferrer"
-        className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
-              <u><b>+971-503635428</b></u>
-            </a>
+            </ContactCTAButton>
+            <ContactCTAButton
+          className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl"
+            >
+              <u><b>+971-503634385</b></u>
+            </ContactCTAButton>
           </div>
         </div>
       </section>

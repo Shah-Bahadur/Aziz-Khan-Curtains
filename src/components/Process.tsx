@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ContactCTAButton from "./ContactCTAButton";
 
 
 const Process = () => {
@@ -98,14 +99,9 @@ const Process = () => {
             <p className="text-gray-600 mb-6">
               Schedule your free home visit today and transform your space with premium curtains
             </p>
-              <a
-                href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-            <button className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+            <ContactCTAButton className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
               Book <u><b>Free</b></u> Home Visit
-            </button></a>
+            </ContactCTAButton>
           </div>
         </div>
       </div>

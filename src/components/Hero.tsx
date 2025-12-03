@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, Award } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import ContactCTAButton from "./ContactCTAButton";
 
 const Hero = () => {
   const [api, setApi] = useState<any>();
@@ -94,16 +95,11 @@ const Hero = () => {
                       </div>
 
                       <div className="flex flex-col sm:flex-row gap-4">
-                        <a
-                href="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit."
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-            <Button 
-            size="lg"
-            className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl">
+            <ContactCTAButton
+            className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:from-champagne-700 hover:to-champagne-500 hover:text-xl text-gray-900 font-semibold px-8 py-2 rounded-lg text-lg transition-all duration-300 shadow-xl inline-flex items-center"
+          >
               Book <u><b>Free</b></u> Home Visit <ArrowRight className="ml-2 w-5 h-5" />
-            </Button></a>
+            </ContactCTAButton>
                         
               
                       </div>

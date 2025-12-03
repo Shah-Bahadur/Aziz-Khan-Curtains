@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ChevronDown, Shield, Clock, Zap } from 'lucide-react';
+import ContactCTAButton from './ContactCTAButton';
 
 const FAQSection = () => {
   const [open, setOpen] = useState<number | null>(0);
@@ -97,14 +98,11 @@ const FAQSection = () => {
           <p className="text-champagne-100 text-sm md:text-base mb-4 md:mb-5 font-medium leading-relaxed">
             Our team is ready to help. Get personalized recommendations now.
           </p>
-          <a
-            href="https://wa.me/+971503634385?text=I%20have%20questions%20about%20curtains%20for%20my%20Dubai%20home"
-            target="_blank"
-            rel="noopener noreferrer"
+          <ContactCTAButton
             className="inline-block bg-white text-champagne-700 font-bold px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-lg hover:bg-luxury-50 transition-all"
           >
             Chat on WhatsApp
-          </a>
+          </ContactCTAButton>
         </div>
       </div>
     </section>
