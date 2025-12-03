@@ -98,18 +98,16 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <Link
-            to="https://wa.me/+971503634385?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20free%20home%20visit%20with%20Aziz%20Khan%20Curtains."
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="tel:+971503634385"
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
           >
-            Call for{" "}
+            Get Your{" "}
             <u>
-              <b>Free</b>
+              <b>Custom Design</b>
             </u>{" "}
-            Consultation
-          </Link>
+            Today
+          </a>
         </div>
       </header>
 
