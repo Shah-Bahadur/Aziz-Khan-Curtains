@@ -24,12 +24,66 @@ const Header = () => {
 
   const businessPhone = "+971503634385";
 
-  // Handle direct call with user number collection
-  const handleDirectCall = () => {
+  // Handle direct call with user number collection & WhatsApp notification
+  const handleDirectCall = async () => {
     const userPhone = prompt("Please enter your phone number to proceed with the call:", "");
+    
     if (userPhone && userPhone.trim()) {
-      // Make the call
-      window.location.href = `tel:${businessPhone}`;
+      try {
+        // Get user's location
+        let userLocation = "Location not available";
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const { latitude, longitude } = position.coords;
+              userLocation = `Lat: ${latitude.toFixed(4)}, Long: ${longitude.toFixed(4)}`;
+            },
+            (error) => {
+              console.log("Location access denied or unavailable");
+            }
+          );
+        }
+
+        // Prepare customer inquiry data
+        const inquiryTime = new Date().toLocaleString("en-US", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: true,
+        });
+
+        const customerName = prompt("Please enter your name:", "");
+        if (!customerName || !customerName.trim()) {
+          return; // User cancelled
+        }
+
+        // Create WhatsApp message with customer details
+        const whatsappMessage = encodeURIComponent(
+          `🔔 NEW CALL INQUIRY\n\n` +
+          `Customer Name: ${customerName}\n` +
+          `Phone Number: ${userPhone}\n` +
+          `Location: ${userLocation}\n` +
+          `Time of Inquiry: ${inquiryTime}\n` +
+          `Page: Free Consultation CTA\n\n` +
+          `Status: User is initiating a direct call`
+        );
+
+        // Send notification to your WhatsApp
+        const whatsappLink = `https://wa.me/971503634385?text=${whatsappMessage}`;
+        window.open(whatsappLink, "_blank", "noopener,noreferrer");
+
+        // Small delay to ensure WhatsApp opens, then make the call
+        setTimeout(() => {
+          window.location.href = `tel:${businessPhone}`;
+        }, 500);
+      } catch (error) {
+        console.error("Error processing call:", error);
+        // Fallback: make the call anyway
+        window.location.href = `tel:${businessPhone}`;
+      }
     }
   };
 
