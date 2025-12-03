@@ -7,37 +7,39 @@ const ContactRedirect = () => {
 
   useEffect(() => {
     // Track the contact method
-    const trackContactMethod = async () => {
-      try {
-        // Send analytics event to your backend or analytics service
-        const payload = {
-          method: method,
-          timestamp: new Date().toISOString(),
-          userAgent: navigator.userAgent,
-          referrer: document.referrer,
-          url: window.location.href,
-        };
-
-        // Log to console (you can replace this with actual API call)
-        console.log("Contact method tracked:", payload);
-
-        // Send to analytics backend (example)
-        // await fetch('/api/track-contact', {
-        //   method: 'POST',
-        //   headers: { 'Content-Type': 'application/json' },
-        //   body: JSON.stringify(payload)
-        // });
-
-        // Send to Google Analytics if available
-        if ((window as any).gtag) {
-          (window as any).gtag("event", "contact_method_selected", {
-            contact_method: method,
-          });
-        }
-      } catch (error) {
-        console.error("Error tracking contact method:", error);
-      }
+const trackContactMethod = async () => {
+  try {
+    // Send analytics event to your backend or analytics service
+    const payload = {
+      method: method,
+      timestamp: new Date().toISOString(),
+      userAgent: navigator.userAgent,
+      referrer: document.referrer,
+      url: window.location.href,
     };
+
+    console.log("Contact method tracked:", payload);
+
+    // Send to Google Analytics if available
+    if ((window as any).gtag) {
+      (window as any).gtag("event", "contact_method_selected", {
+        contact_method: method,
+      });
+    }
+
+    // 🔥 ADD THIS BLOCK — REQUIRED FOR GOOGLE TAG MANAGER
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "contact_method", // this is the event name you’ll use in GTM
+        method: method, // this contains "whatsapp" or "call"
+      });
+    }
+
+  } catch (error) {
+    console.error("Error tracking contact method:", error);
+  }
+};
+
 
     trackContactMethod();
 
