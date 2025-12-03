@@ -131,11 +131,7 @@ const Header = () => {
             onClick={() => setShowContactDialog(true)}
             className="bg-gradient-to-r from-champagne-500 to-champagne-700 hover:bg-champagne-700 text-gray-900 px-2 sm:px-4 py-2 sm:py-2 rounded-xl text-sm sm:text-sm font-medium transition"
           >
-            Get Your{" "}
-            <u>
-              <b>Custom Design</b>
-            </u>{" "}
-            Today
+            Get Your <u><b>Design</b></u> Today
           </button>
         </div>
       </header>
