@@ -23,9 +23,9 @@ const LazyLoader: React.FC<{ onFinish?: () => void }> = ({ onFinish }) => {
         exit ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
       }`}
     >
-      {/* Animated Spinner */}
+      {/* Animated Spinner - Matching ContactRedirect */}
       <div className="mb-6">
-        <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-champagne-200 border-b-champagne-600"></div>
+        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-champagne-600"></div>
       </div>
 
       {/* Branding */}
