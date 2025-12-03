@@ -10,7 +10,7 @@ import {
   MessageCircle,
   PhoneCall,
 } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -33,8 +33,14 @@ const Header = () => {
   const [lastClick, setLastClick] = useState<number | null>(null);
   const [showContactDialog, setShowContactDialog] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const businessPhone = "+971503634385";
+
+  // Helper function to check if route is active
+  const isActive = (path: string) => {
+    return location.pathname === path ? "text-champagne-600 border-b-2 border-champagne-600" : "text-gray-700 hover:text-champagne-600";
+  };
 
   // Handle WhatsApp contact
   const handleWhatsApp = () => {
@@ -80,14 +86,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden sm:flex space-x-4 text-sm font-medium">
-            <Link to="/" className="text-gray-700 hover:text-champagne-600">
+            <Link to="/" className={`pb-1 transition ${isActive("/")}`}>
               Home
             </Link>
 
             {/* ✅ Products Dropdown for Desktop */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="text-gray-700 hover:text-champagne-600">
+                <button className={`pb-1 transition font-medium ${location.pathname.includes("/products") || location.pathname.includes("/curtains_lp") ? "text-champagne-600 border-b-2 border-champagne-600" : "text-gray-700 hover:text-champagne-600"}`}>
                   Products
                 </button>
               </DropdownMenuTrigger>
@@ -112,13 +118,13 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link to="/our_work" className="text-gray-700 hover:text-champagne-600">
+            <Link to="/our_work" className={`pb-1 transition ${isActive("/our_work")}`}>
               Our Work
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-champagne-600">
+            <Link to="/about" className={`pb-1 transition ${isActive("/about")}`}>
               About Us
             </Link>
-            <Link to="/blog" className="text-gray-700 hover:text-champagne-600">
+            <Link to="/blog" className={`pb-1 transition ${isActive("/blog")}`}>
               Blogs
             </Link>
           </nav>
